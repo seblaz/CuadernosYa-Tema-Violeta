@@ -1,4 +1,12 @@
-# PrestaShop Classic Theme
+# PrestaShop Tema Violeta
 
-The Classic Theme is the new default Theme for Prestashop 1.7 and onwards.
-It is build upon the new Starter Theme.
+Tema violeta para prestashop.
+
+Para compilar:
+
+cd _dev
+npm install
+npm run-script build
+
+Para compilar a cada cambio:
+npm run watch
