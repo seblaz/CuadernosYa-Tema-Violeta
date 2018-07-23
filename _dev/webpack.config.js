@@ -60,12 +60,12 @@ let config = {
         })
       },
       {
-        test: /.(png|woff(2)?|eot|ttf|svg)(\?[a-z0-9=\.]+)?$/,
+        test: /.(png|woff(2)?|eot|ttf|svg|jpg)(\?[a-z0-9=\.]+)?$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '../css/[hash].[ext]'
+              name: '../img/[hash].[ext]'
             }
           }
         ]

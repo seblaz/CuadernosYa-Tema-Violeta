@@ -2,6 +2,7 @@
     "name": "prestashop-classic-dev-tools",
     "version": "1.0.0",
     "description": "Tools to help while developing the Classic theme",
+    "private": true,
     "main": "index.js",
     "scripts": {
         "watch": "webpack -w",

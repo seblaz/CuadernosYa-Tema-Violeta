@@ -27,6 +27,7 @@
 @import "components/errors";
 @import "components/customization-modal";
 @import "components/sitemap";
+
 /*** HEADER ***/
 #header {
   background: white;
@@ -386,3 +387,5 @@
     padding-right: 0 !important;
   }
 }
+
+@import "nuevo";
