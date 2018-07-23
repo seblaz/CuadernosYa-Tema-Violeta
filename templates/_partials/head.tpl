@@ -22,6 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+ 
 {block name='head_charset'}
   <meta charset="utf-8">
 {/block}
@@ -47,12 +48,18 @@
 {/block}
 
 {block name='head_viewport'}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {/block}
 
 {block name='head_icons'}
   <link rel="icon" type="image/vnd.microsoft.icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
   <link rel="shortcut icon" type="image/x-icon" href="{$shop.favicon}?{$shop.favicon_update_time}">
+{/block}
+
+{block name='author'}
+  <!-- Author Meta -->
+  <meta name="author" content="CodePixar">
 {/block}
 
 {block name='stylesheets'}
