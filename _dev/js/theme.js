@@ -26,6 +26,7 @@ import 'expose-loader?Tether!tether';
 import 'bootstrap/dist/js/bootstrap.min';
 import 'flexibility';
 import 'bootstrap-touchspin';
+import 'jquery-sticky';
 
 import './responsive';
 import './checkout';
@@ -67,3 +68,5 @@ $(document).ready(() => {
   productMinitature.init();
   productSelect.init();
 });
+
+import './nuevo'

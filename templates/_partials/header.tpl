@@ -29,7 +29,21 @@
 {/block}
 
 {block name='header_nav'}
-  <nav class="header-nav">
+  <nav class="navbar navbar-expand-lg  navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="{$urls.base_url}">
+          <img class="logo" src="{$shop.logo}" alt="{$shop.name}">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+          {hook h='displayTop'}
+      </div>						
+    </div>
+  </nav>
+  {* <nav class="header-nav">
     <div class="container">
       <div class="row">
         <div class="hidden-sm-down">
@@ -51,11 +65,11 @@
         </div>
       </div>
     </div>
-  </nav>
+  </nav> *}
 {/block}
 
 {block name='header_top'}
-  <div class="header-top">
+  {* <div class="header-top">
     <div class="container">
        <div class="row">
         <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
@@ -86,5 +100,5 @@
       </div>
     </div>
   </div>
-  {hook h='displayNavFullWidth'}
+  {hook h='displayNavFullWidth'} *}
 {/block}

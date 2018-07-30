@@ -63,7 +63,7 @@
         {include file='catalog/_partials/product-activation.tpl'}
       {/block}
 
-      <header id="header">
+      <header id="header" class="default-header">
         {block name='header'}
           {include file='_partials/header.tpl'}
         {/block}
@@ -82,7 +82,7 @@
           
           <div class="row">
           {block name="left_column"}
-            <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
+            <div id="left-column" class="col-xs-12 col-sm-4 col-md-3 d-none d-md-block">
               {if $page.page_name == 'product'}
                 {hook h='displayLeftColumnProduct'}
               {else}
