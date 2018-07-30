@@ -31,16 +31,24 @@
 {block name='header_nav'}
   <nav class="navbar navbar-expand-lg  navbar-light">
     <div class="container">
-        <a class="navbar-brand" href="{$urls.base_url}">
-          <img class="logo" src="{$shop.logo}" alt="{$shop.name}">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <a class="navbar-brand logo-link" href="{$urls.base_url}">
+        <img class="logo" src="{$shop.logo}" alt="{$shop.name}">
+      </a>
 
-        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-          {hook h='displayTop'}
-      </div>						
+      <div class="navbar-brand mobile">
+        {hook h='displayNav2'}
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+        {hook h='displayTop'}
+      </div>
+      {* <li class="divider d-none d-lg-block"></li> *}
+      <div class="navbar-brand desktop">
+        {hook h='displayNav2'}
+      </div>
     </div>
   </nav>
   {* <nav class="header-nav">

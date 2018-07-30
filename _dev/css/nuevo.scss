@@ -2990,9 +2990,37 @@
   padding-bottom: 0.3125rem;
 }
 
+div.navbar-brand.desktop {
+  display: flex;
+  flex-basis: auto;
+}
+
+div.navbar-brand.mobile{
+  display: none;
+  margin-left: auto;
+}
+
+button.navbar-toggler{
+  border-radius: 0.25rem;
+}
+
 @include media-breakpoint-down(md) {
   .navbar-nav .dropdown-toggle.dropdown-toggle-split{
     float: right;
+  }
+
+  div.navbar-brand.desktop{
+    display: none;
+  }
+
+  div.navbar-brand.mobile{
+    display: flex;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .cart-text, .customert-text{
+    display: none;
   }
 }
 
@@ -3006,4 +3034,44 @@ a.dropdown-menu-link{
 
 #wrapper .container{
   margin-top: 50px;
+}
+
+#_desktop_user_info{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-brand.logo-link{
+  margin: 0;
+}
+
+@include media-breakpoint-down(xs) {
+  div.navbar-brand.mobile{
+    // margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .logo{
+    height: 40px;
+  }
+
+  #_desktop_user_info{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  button.navbar-toggler{
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 5px;
+  }
+  #header > nav{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #wrapper .container{
+    margin-top: 35px;
+  }
+  
 }
