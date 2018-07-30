@@ -79,7 +79,8 @@
           {block name='breadcrumb'}
             {include file='_partials/breadcrumb.tpl'}
           {/block}
-
+          
+          <div class="row">
           {block name="left_column"}
             <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
               {if $page.page_name == 'product'}
@@ -112,7 +113,8 @@
         </div>
         {hook h="displayWrapperBottom"}
       </section>
-
+      </div>
+      
       <footer id="footer">
         {block name="footer"}
           {include file="_partials/footer.tpl"}

@@ -197,7 +197,6 @@ input, textarea {
 }
 .form-control-submit {
   &.disabled {
-    background: $brand-info;
     color: white;
   }
 }

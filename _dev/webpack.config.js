@@ -25,6 +25,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const development = true;
 
 let config = {
   entry: {
@@ -86,22 +87,28 @@ let config = {
   ]
 };
 
-config.plugins.push(
-  new webpack.optimize.UglifyJsPlugin({
-    sourceMap: false,
-    compress: {
-      sequences: true,
-      conditionals: true,
-      booleans: true,
-      if_return: true,
-      join_vars: true,
-      drop_console: true
-    },
-    output: {
-      comments: false
-    },
-    minimize: true
-  })
-);
+if(development){
+  
+  config.devtool = 'inline-source-map';
+
+}else{
+  config.plugins.push(
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: false,
+      compress: {
+        sequences: true,
+        conditionals: true,
+        booleans: true,
+        if_return: true,
+        join_vars: true,
+        drop_console: true
+      },
+      output: {
+        comments: false
+      },
+      minimize: true
+    })
+  ); 
+}
 
 module.exports = config;

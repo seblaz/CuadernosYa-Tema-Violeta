@@ -1,4 +1,4 @@
-@import "~bourbon/app/assets/stylesheets/bourbon";
+@import "~bourbon/core/bourbon";
 @import "partials/_variables";
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.css";
@@ -388,4 +388,4 @@
   }
 }
 
-@import "nuevo";
+// @import "nuevo";
