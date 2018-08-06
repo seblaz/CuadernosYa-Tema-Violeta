@@ -1955,12 +1955,14 @@
     background-image: -moz-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
     background-image: -webkit-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
     background-image: -ms-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
+    background-image: linear-gradient(to right, #908ced 0%, #b56fe8 100%);
   }
   
   .p1-gradient-color, .sigle-service:hover .lnr, .single-blog h4:hover {
     background: -moz-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
     background: -webkit-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
     background: -ms-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
+    background: linear-gradient(to right, #908ced 0%, #b56fe8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -2192,6 +2194,7 @@
   .sigle-service .lnr {
     font-size: 35px;
     color: #777777;
+    padding-left: 10px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -2216,6 +2219,9 @@
   @media (max-width: 798px) {
     .sigle-service {
       text-align: center;
+    }
+    .sigle-service .lnr {
+      padding-left: 0;
     }
   }
   
@@ -3074,4 +3080,30 @@ a.dropdown-menu-link{
     margin-top: 35px;
   }
   
+}
+
+#home{
+  background-image: url('../img/header-bg\ \(1106\ ×\ 737\).jpg');
+}
+
+#entrega div p{
+  color: white;
+}
+
+#block_myaccount_infos > h6 > a{
+  color: #fff;
+}
+
+.linkblock{
+  padding-top: 40px;
+}
+
+@include media-breakpoint-down(md) {
+  .linkblock{
+    padding-top: 20px;
+  }  
+}
+
+.navbar-brand > div > div i{
+  color: #908ced;
 }

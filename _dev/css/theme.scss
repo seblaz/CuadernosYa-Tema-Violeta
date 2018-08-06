@@ -39,7 +39,7 @@
     color: $gray-darker;
     &:hover {
       text-decoration: none;
-      color: $brand-primary;
+      color: #8490ff;
     }
   }
   .menu {
@@ -374,9 +374,6 @@
   .menu,
   .dropdown-item {
     padding-left: 0;
-  }
-  #footer {
-    padding-top: 0.5rem;
   }
 }
 

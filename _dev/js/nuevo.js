@@ -22,12 +22,12 @@ $(document).ready(function(){
           $('select').niceSelect();
     };
 
-    $('.img-pop-up').magnificPopup({
-        type: 'image',
-        gallery:{
-        enabled:true
-        }
-    });
+    // $('.img-pop-up').magnificPopup({
+    //     type: 'image',
+    //     gallery:{
+    //     enabled:true
+    //     }
+    // });
 
 
   // $('.navbar-nav>li>a').on('click', function(){
@@ -36,45 +36,45 @@ $(document).ready(function(){
 
 
 
-    $('.active-works-carousel').owlCarousel({
-        items:1,
-        loop:true,
-        margin: 100,
-        dots: true,
-        autoplay:true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            480: {
-                items: 1,
-            },
-            768: {
-                items: 1,
-            }
-        }
-    });
+    // $('.active-works-carousel').owlCarousel({
+    //     items:1,
+    //     loop:true,
+    //     margin: 100,
+    //     dots: true,
+    //     autoplay:true,
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         480: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 1,
+    //         }
+    //     }
+    // });
 
-    $('.active-testimonial').owlCarousel({
-        items:2,
-        loop:true,
-        margin: 20,
-        dots: true,
-        autoplay:true,
-        nav:true,
-        navText: ["<span class='lnr lnr-arrow-up'></span>","<span class='lnr lnr-arrow-down'></span>"],        
-        responsive: {
-            0: {
-                items: 1
-            },
-            480: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            }
-        }
-    });
+    // $('.active-testimonial').owlCarousel({
+    //     items:2,
+    //     loop:true,
+    //     margin: 20,
+    //     dots: true,
+    //     autoplay:true,
+    //     nav:true,
+    //     navText: ["<span class='lnr lnr-arrow-up'></span>","<span class='lnr lnr-arrow-down'></span>"],        
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         480: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 2,
+    //         }
+    //     }
+    // });
 
 
 
@@ -118,74 +118,83 @@ $(document).ready(function(){
   });
 
 
-    $(".skill1").DonutWidget({
+    // $(".skill1").DonutWidget({
 
-      // these are default options
-      max: 100, 
-      value: 75, 
-      text: "", 
-      rotate: 0, 
-      caption: "", 
-      template: [
-        '<div class="donut-hole"><span class="donut-filling"></div>', 
-        '<div class="donut-bite" data-segment-index="0"></div>', 
-        '<div class="donut-bite" data-segment-index="1"></div>', 
-        '<div class="donut-caption-wrapper"><span class="donut-caption"></span></div>'
-      ].join(''), 
-      colors: {
-        primary: "#8490ff",
-        background: "#eee"
-      },
-      size: "large"
+    //   // these are default options
+    //   max: 100, 
+    //   value: 75, 
+    //   text: "", 
+    //   rotate: 0, 
+    //   caption: "", 
+    //   template: [
+    //     '<div class="donut-hole"><span class="donut-filling"></div>', 
+    //     '<div class="donut-bite" data-segment-index="0"></div>', 
+    //     '<div class="donut-bite" data-segment-index="1"></div>', 
+    //     '<div class="donut-caption-wrapper"><span class="donut-caption"></span></div>'
+    //   ].join(''), 
+    //   colors: {
+    //     primary: "#8490ff",
+    //     background: "#eee"
+    //   },
+    //   size: "large"
       
+    // });
+
+    //   $(".skill2").DonutWidget({
+
+    //     // these are default options
+    //     max: 100, 
+    //     value: 95, 
+    //     text: "", 
+    //     rotate: 0, 
+    //     caption: "", 
+    //     template: [
+    //       '<div class="donut-hole"><span class="donut-filling"></div>', 
+    //       '<div class="donut-bite" data-segment-index="0"></div>', 
+    //       '<div class="donut-bite" data-segment-index="1"></div>', 
+    //       '<div class="donut-caption-wrapper"><span class="donut-caption"></span></div>'
+    //     ].join(''), 
+    //     colors: {
+    //       primary: "#8490ff",
+    //       background: "#eee"
+    //     },
+    //     size: "large"
+        
+    //   });
+
+    //   $(".skill3").DonutWidget({
+
+    //     // these are default options
+    //     max: 100, 
+    //     value: 85, 
+    //     text: "", 
+    //     rotate: 0, 
+    //     caption: "", 
+    //     template: [
+    //       '<div class="donut-hole"><span class="donut-filling"></div>', 
+    //       '<div class="donut-bite" data-segment-index="0"></div>', 
+    //       '<div class="donut-bite" data-segment-index="1"></div>', 
+    //       '<div class="donut-caption-wrapper"><span class="donut-caption"></span></div>'
+    //     ].join(''), 
+    //     colors: {
+    //       primary: "#8490ff",
+    //       background: "#eee"
+    //     },
+    //     size: "large"
+        
+    //   });            
+
+    $(document).ready(function() {
+        $('#mc_embed_signup').find('form').ajaxChimp();
     });
-
-      $(".skill2").DonutWidget({
-
-        // these are default options
-        max: 100, 
-        value: 95, 
-        text: "", 
-        rotate: 0, 
-        caption: "", 
-        template: [
-          '<div class="donut-hole"><span class="donut-filling"></div>', 
-          '<div class="donut-bite" data-segment-index="0"></div>', 
-          '<div class="donut-bite" data-segment-index="1"></div>', 
-          '<div class="donut-caption-wrapper"><span class="donut-caption"></span></div>'
-        ].join(''), 
-        colors: {
-          primary: "#8490ff",
-          background: "#eee"
-        },
-        size: "large"
-        
-      });
-
-      $(".skill3").DonutWidget({
-
-        // these are default options
-        max: 100, 
-        value: 85, 
-        text: "", 
-        rotate: 0, 
-        caption: "", 
-        template: [
-          '<div class="donut-hole"><span class="donut-filling"></div>', 
-          '<div class="donut-bite" data-segment-index="0"></div>', 
-          '<div class="donut-bite" data-segment-index="1"></div>', 
-          '<div class="donut-caption-wrapper"><span class="donut-caption"></span></div>'
-        ].join(''), 
-        colors: {
-          primary: "#8490ff",
-          background: "#eee"
-        },
-        size: "large"
-        
-      });            
-
-      $(document).ready(function() {
-          $('#mc_embed_signup').find('form').ajaxChimp();
-      });   
-
- });
+  
+  var $bg = $('#home');
+  if($bg.length){
+    var bg_src = $bg.css('background-image'); // $bg is the jQuery object of the element we're parallaxifying
+    bg_src = bg_src.replace('url(', '').replace(')', '').replace( /['"]/g, "" ); // background-image is wrapped with url('') so remove it
+    $bg.css({'background': 'transparent'}); // make the bg transparent for the parallax to work
+    $($bg).parallax({
+        imageSrc: bg_src
+    });
+  }
+});

@@ -73,6 +73,9 @@
         {include file='_partials/notifications.tpl'}
       {/block}
 
+      {if $page.page_name == 'index'}
+        {include file='own_index.tpl'}
+      {else}
       <section id="wrapper">
         {hook h="displayWrapperTop"}
         <div class="container">
@@ -113,9 +116,9 @@
         </div>
         {hook h="displayWrapperBottom"}
       </section>
-      </div>
-      
-      <footer id="footer">
+      {/if}
+
+      <footer id="footer" class="footer-area section-gap">
         {block name="footer"}
           {include file="_partials/footer.tpl"}
         {/block}
