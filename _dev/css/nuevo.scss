@@ -1072,10 +1072,6 @@
     border-left: 2px solid #8490ff;
   }
   
-  .progress-table-wrap {
-    /* overflow-x: scroll; */
-  }
-  
   .progress-table {
     background: #f9f9ff;
     padding: 15px 0px 30px 0px;
@@ -1963,6 +1959,7 @@
     background: -webkit-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
     background: -ms-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
     background: linear-gradient(to right, #908ced 0%, #b56fe8 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -2153,12 +2150,6 @@
   @media (max-width: 991px) {
     .banner-content h1 {
       font-size: 36px;
-    }
-  }
-  
-  @media (max-width: 991px) {
-    .banner-content h1 br {
-      /* display: none; */
     }
   }
   
@@ -3039,7 +3030,7 @@ a.dropdown-menu-link{
 }
 
 #wrapper .container{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #_desktop_user_info{
@@ -3053,7 +3044,6 @@ a.dropdown-menu-link{
 
 @include media-breakpoint-down(xs) {
   div.navbar-brand.mobile{
-    // margin-left: 0;
     margin-right: 5px;
   }
 
@@ -3077,7 +3067,7 @@ a.dropdown-menu-link{
   }
 
   #wrapper .container{
-    margin-top: 35px;
+    margin-top: 25px;
   }
   
 }
@@ -3106,4 +3096,8 @@ a.dropdown-menu-link{
 
 .navbar-brand > div > div i{
   color: #908ced;
+}
+
+#wrapper{
+  font-family: Noto Sans,sans-serif
 }

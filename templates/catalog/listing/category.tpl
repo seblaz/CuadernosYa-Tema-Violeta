@@ -24,7 +24,7 @@
  *}
 {extends file='catalog/listing/product-list.tpl'}
 
-{block name='product_list_header'}
+{* {block name='product_list_header'}
     <div class="block-category card card-block d-none d-md-block">
       <h1 class="h1">{$category.name}</h1>
       {if $category.description}
@@ -39,4 +39,4 @@
     <div class="text-sm-center hidden-md-up">
       <h1 class="h1">{$category.name}</h1>
     </div>
-{/block}
+{/block} *}
