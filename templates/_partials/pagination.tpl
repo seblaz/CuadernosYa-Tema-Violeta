@@ -22,17 +22,18 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<nav class="pagination">
-  <div class="col-md-4">
+<div class="container">
+<nav class="pagination row">
+  <div class="col-sm-5 col-xs-12">
     {block name='pagination_summary'}
       {l s='Showing %from%-%to% of %total% item(s)' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}
     {/block}
   </div>
 
-  <div class="col-md-6 offset-md-2 pr-0">
+  <div class="col-sm-6 offset-sm-1 pr-0  col-xs-12">
     {block name='pagination_page_list'}
      {if $pagination.should_be_displayed}
-        <ul class="page-list clearfix text-sm-center">
+        <ul class="page-list clearfix text-center">
           {foreach from=$pagination.pages item="page"}
           
             <li {if $page.current} class="current" {/if}>
@@ -61,3 +62,4 @@
   </div>
 
 </nav>
+</div>

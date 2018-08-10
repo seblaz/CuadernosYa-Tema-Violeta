@@ -22,7 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<span class="col-sm-2 col-md-3 sort-by">{l s='Sort by:' d='Shop.Theme.Global'}</span>
+<span class="col-md-3 sort-by">{l s='Sort by:' d='Shop.Theme.Global'}</span>
 <div class="{if !empty($listing.rendered_facets)}col-sm-9{else}{/if} col-md-9 products-sort-order dropdown">
   <button
     class="btn-unstyle select-title"
