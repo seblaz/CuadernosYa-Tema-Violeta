@@ -1,5 +1,4 @@
 /config/theme.yml
 _dev/node_modules
-_dev/package-lock.json
 .vscode
 assets

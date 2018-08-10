@@ -22,7 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div id="js-product-list-top" class="row products-selection">
+<div id="js-product-list-top" class="products-selection">
   <div class="col-md-6 hidden-sm-down total-products">
     {if $listing.pagination.total_items > 1}
       <p>{l s='There are %product_count% products.' d='Shop.Theme.Catalog' sprintf=['%product_count%' => $listing.pagination.total_items]}</p>
@@ -30,8 +30,8 @@
       <p>{l s='There is 1 product.' d='Shop.Theme.Catalog'}</p>
     {/if}
   </div>
-  <div class="col-md-6">
-    <div class="row sort-by-row">
+  <div class="col-md-12">
+    <div class="sort-by-row">
 
       {block name='sort_by'}
         {include file='catalog/_partials/sort-orders.tpl' sort_orders=$listing.sort_orders}
@@ -46,11 +46,11 @@
       {/if}
     </div>
   </div>
-  <div class="col-sm-12 hidden-md-up text-sm-center showing">
+  {* <div class="col-sm-12 d-sm-none text-sm-center showing">
     {l s='Showing %from%-%to% of %total% item(s)' d='Shop.Theme.Catalog' sprintf=[
     '%from%' => $listing.pagination.items_shown_from ,
     '%to%' => $listing.pagination.items_shown_to,
     '%total%' => $listing.pagination.total_items
     ]}
-  </div>
+  </div> *}
 </div>

@@ -53,7 +53,7 @@ let config = {
               loader: 'css-loader',
               options: {
                 minimize: false,
-                autoprefixer: false
+                autoprefixer: true
               }
             },
             'postcss-loader',
