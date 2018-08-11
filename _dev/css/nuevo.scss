@@ -3113,18 +3113,11 @@ a.dropdown-menu-link{
   text-align: left;
 }
 
-.products-sort-order.dropdown{
+.products-sort-order{
   padding-left: 0;
   padding-right: 0;
   margin-top: 10px;
   margin-bottom: 5px;
-}
-
-@include media-breakpoint-down(xs) {
-  .products-sort-order.dropdown{
-    padding-left: 12px;
-    padding-right: 12px;
-  }
 }
 
 #wrapper > div > div{
@@ -3136,4 +3129,38 @@ a.dropdown-menu-link{
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 25px;
+}
+
+#js-product-list > div.hidden-md-up.text-xs-right.up{
+  margin-left: 30px;
+}
+
+.product-quantity .qty{
+  display: block;
+}
+
+.bootstrap-touchspin .input-group-btn-vertical>.btn{
+  right: initial;
+}
+
+.product-quantity .add{
+  margin-left: 40px;
+}
+
+@include media-breakpoint-down(xs) {
+  .product-quantity{
+    display: block;
+  }
+
+  .add-to-cart{
+    margin-top: 5px;
+  }
+
+  .product-quantity .add{
+    margin-left: 0; 
+  }
+
+  .add{
+    width: 100%;
+  }
 }

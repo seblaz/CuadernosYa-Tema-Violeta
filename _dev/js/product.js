@@ -98,10 +98,10 @@ $(document).ready(function () {
 
     $quantityInput.TouchSpin({
       verticalbuttons: true,
-      verticalupclass: 'material-icons touchspin-up',
-      verticaldownclass: 'material-icons touchspin-down',
-      buttondown_class: 'btn btn-touchspin js-touchspin',
-      buttonup_class: 'btn btn-touchspin js-touchspin',
+      // verticalupclass: '',
+      // verticaldownclass: '',
+      // buttondown_class: '',
+      // buttonup_class: '',
       min: parseInt($quantityInput.attr('min'), 10),
       max: 1000000
     });

@@ -197,4 +197,9 @@ $(document).ready(function(){
         imageSrc: bg_src
     });
   }
+
+  $("input[name='demo_vertical']").TouchSpin({
+    verticalbuttons: true
+  });
+
 });

@@ -22,6 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+    {* <input id="demo_vertical" type="text" value="" name="demo_vertical" class="input-group"> *}
 <div class="product-add-to-cart">
   {if !$configuration.is_catalog}
     <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
