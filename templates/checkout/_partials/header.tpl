@@ -22,7 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-{block name='header'}
+{* {block name='header'}
   {block name='header_nav'}
     <nav class="header-nav">
       <div class="container">
@@ -73,4 +73,4 @@
     </div>
     {hook h='displayNavFullWidth'}
   {/block}
-{/block}
+{/block} *}

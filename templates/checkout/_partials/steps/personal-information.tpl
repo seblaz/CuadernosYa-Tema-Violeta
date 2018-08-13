@@ -50,7 +50,7 @@
         </a>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item separator">
         <span href="nav-separator"> | </span>
       </li>
 

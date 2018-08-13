@@ -345,8 +345,8 @@ body#checkout {
   }
   #footer {
     @include box-shadow;
-    padding: 0.9375rem;
-    background: white;
+    // padding: 0.9375rem;
+    // background: white;
     color: $gray;
   }
 }
@@ -525,4 +525,9 @@ body#checkout {
       display: block;
     }
   }
+}
+
+.nav-item.separator{
+  margin-top: auto;
+  margin-bottom: auto;
 }
