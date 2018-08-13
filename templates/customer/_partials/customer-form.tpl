@@ -31,6 +31,7 @@
   <section>
     {block "form_fields"}
       {foreach from=$formFields item="field"}
+        {if $field.name=='id_gender'}{continue}{/if}
         {block "form_field"}
           {form_field field=$field}
         {/block}
