@@ -43,7 +43,9 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-        {hook h='displayTop'}
+        {block name='menu_links'}
+          {hook h='displayTop'}
+        {/block}
       </div>
       {* <li class="divider d-none d-lg-block"></li> *}
       <div class="navbar-brand desktop">

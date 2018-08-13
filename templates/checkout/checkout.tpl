@@ -22,25 +22,30 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- {extends file=$layout}
+{extends file=$layout}
 
-      {block name='content'}
-        <section id="content">
-          <div class="row">
-            <div class="col-md-8">
-              {block name='cart_summary'}
-                {render file='checkout/checkout-process.tpl' ui=$checkout_process}
-              {/block}
-            </div>
-            <div class="col-md-4">
+{block name='menu_links'}
+<ul class="navbar-nav">
+  <li><a href="{$urls.base_url}">Inicio</a>
+</ul>
+{/block}
 
-              {block name='cart_summary'}
-                {include file='checkout/_partials/cart-summary.tpl' cart = $cart}
-              {/block}
+{block name='content'}
+  <section id="content">
+    <div class="row">
+      <div class="col-md-8">
+        {block name='cart_summary'}
+          {render file='checkout/checkout-process.tpl' ui=$checkout_process}
+        {/block}
+      </div>
+      <div class="col-md-4">
 
-              {hook h='displayReassurance'}
-            </div>
-          </div>
-        </section>
-      {/block}
-      
+        {block name='cart_summary'}
+          {include file='checkout/_partials/cart-summary.tpl' cart = $cart}
+        {/block}
+
+        {hook h='displayReassurance'}
+      </div>
+    </div>
+  </section>
+{/block}
