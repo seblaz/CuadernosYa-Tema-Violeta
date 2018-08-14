@@ -1913,9 +1913,6 @@
   }
   
   @media (max-width: 992px) {
-    .navbar-nav {
-      margin-top: 10px;
-    }
     .navbar-nav a {
       padding: 0;
     }
@@ -3015,10 +3012,15 @@ button.navbar-toggler{
   }
 }
 
-@include media-breakpoint-down(lg) {
-  .cart-text, .customert-text{
+@include media-breakpoint-down(md) {
+  .cart-text, .customer-text{
     display: none;
   }
+
+  #_desktop_user_info, #loged_in_dropdown > li > div{
+    padding-right: 0;
+  }
+
 }
 
 a.dropdown-menu-link{
@@ -3225,4 +3227,78 @@ div > .cart-line-product-actions{
     padding-left: 5px;
     padding-right: 5px;
   }
+}
+
+#content-wrapper{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#login-form > section > div > label{
+  text-align: left;
+}
+
+#loged_in_dropdown > li > div > a{
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: none;
+  font-weight: 300;
+
+}
+
+.navbar-brand.mobile #loged_in_dropdown > li{
+  padding: 0;
+}
+
+#loged_in_dropdown > li > div > div > a{
+  text-transform: none;
+  font-weight: 300;
+}
+
+.navbar-brand.mobile #_desktop_cart{
+  margin-top: auto;
+}
+
+// .navbar-brand.mobile #loged_in_dropdown > li.dropdown .dropdown-menu{
+//   transition: all 200ms ease-in;
+// }
+
+// .navbar-brand.mobile #loged_in_dropdown > li.dropdown:hover .dropdown-menu{
+//   display: block;
+//   opacity: 1;
+// }
+
+.navbar-brand.mobile #loged_in_dropdown {
+  position: relative;
+  overflow-x: visible;
+
+  .dropdown-menu{
+    position: absolute;
+    margin: 0.125rem 0 0;
+    margin-top: 15px;
+  }
+}
+
+.navbar-brand.mobile #loged_in_dropdown .dropdown .dropdown-menu {
+  display: block;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+.navbar-brand.mobile #loged_in_dropdown .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 345px) {
+  .logo {
+    height: 35px;
+  }
+}
+
+.input-group .input-group-btn > .btn{
+  height: 37.937px;
 }

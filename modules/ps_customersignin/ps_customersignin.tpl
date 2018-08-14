@@ -25,7 +25,37 @@
 <div id="_desktop_user_info">
   <div class="user-info">
     {if $logged}
-      <a
+      <ul id="loged_in_dropdown" class="navbar-nav">
+          <li class="dropdown">
+            <div class="dropdown-group">
+              <a>
+                <i class="material-icons logged">&#xE7FF;</i>
+                <span class="customer-text">Perfil</span>
+              </a>
+              <span class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              </span>
+              <div class="dropdown-menu">
+                <a
+                  class="dropdown-item account"
+                  href="{$my_account_url}"
+                  title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}"
+                  rel="nofollow"
+                >
+                  <span >Mi cuenta</span>
+                </a>
+                <a
+                  class="dropdown-item logout"
+                  href="{$logout_url}"
+                  rel="nofollow"
+                >
+                  {l s='Sign out' d='Shop.Theme.Actions'}
+                </a>
+              </div>
+            </div>
+          </li>
+      </ul>
+
+      {* <a
         class="logout hidden-sm-down"
         href="{$logout_url}"
         rel="nofollow"
@@ -40,8 +70,8 @@
         rel="nofollow"
       >
         <i class="material-icons hidden-md-up logged">&#xE7FF;</i>
-        <span class="hidden-sm-down">{$customerName}</span>
-      </a>
+        <span class="hidden-sm-down">{$customer.firstname}</span>
+      </a> *}
     {else}
       <a
         href="{$my_account_url}"
@@ -49,7 +79,7 @@
         rel="nofollow"
       >
         <i class="material-icons">&#xE7FF;</i>
-        <span class="customert-text">{l s='Sign in' d='Shop.Theme.Actions'}</span>
+        <span class="customer-text">{l s='Sign in' d='Shop.Theme.Actions'}</span>
       </a>
     {/if}
   </div>
