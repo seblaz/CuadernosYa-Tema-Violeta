@@ -206,4 +206,7 @@ $(document).ready(function(){
     buttonup_class: 'btn btn-touchspin js-touchspin js-decrease-product-quantity'
   });
 
+  $('#boton-chat').click(function(event){
+    FB.CustomerChat.showDialog();
+  });
 });
