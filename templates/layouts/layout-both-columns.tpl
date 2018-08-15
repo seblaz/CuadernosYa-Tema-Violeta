@@ -49,8 +49,8 @@
       attribution=setup_tool
       page_id="2173636302868010"
       theme_color="#0084ff"
-      logged_in_greeting="Hola! Cómo podemos ayudarte?"
-      logged_out_greeting="Hola! Cómo podemos ayudarte?"
+      logged_in_greeting="¡Hola! ¿Cómo podemos ayudarte?"
+      logged_out_greeting="¡Hola! ¿Cómo podemos ayudarte?"
       greeting_dialog_delay="10"
       greeting_dialog_display="fade"
       >

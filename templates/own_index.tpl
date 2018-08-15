@@ -1,3 +1,5 @@
+{$url_tienda = {url entity='category' id=2}}
+
 <!-- start banner Area -->
 <section class="banner-area relative" id="home">
     <div class="overlay-bg overlay"></div>
@@ -9,7 +11,7 @@
                     al alcance <br>
                     de tu <span>Mano</span>							
                 </h1>
-                <a href="tienda.html" class="primary-btn2 header-btn text-uppercase">Ir a la tienda!</a>
+                <a href="{$url_tienda}" class="primary-btn2 header-btn text-uppercase">Ir a la tienda!</a>
             </div>												
         </div>
     </div>
@@ -34,7 +36,7 @@
                 <p>
                     Realiza tu pedido a través de nuestro sitio web.
                 </p>
-                <a href="tienda.html" class="text-uppercase primary-btn2 primary-border circle">Ir a la tienda!</a>
+                <a href="{$url_tienda}" class="text-uppercase primary-btn2 primary-border circle">Ir a la tienda!</a>
             </div>
             <div class="sigle-service col-lg-3 col-md-6 funcionamiento">
                 <span class="lnr lnr-rocket"></span>
@@ -75,9 +77,27 @@
                     Una vez que realices el pedido online nos contactamos con vos para coordinar la entrega en la fiuba. Garantizamos que tu pedido estará disponible para la entrega en un máximo de tres días hábiles.
                 </p>
             </div>
-            <div class="col-lg-6">
-                <div class="ecwid ecwid-SingleProduct-v2 ecwid-SingleProduct-v2-bordered ecwid-SingleProduct-v2-centered ecwid-Product ecwid-Product-110806963" itemscope itemtype="http://schema.org/Product" data-single-product-id="110806963"><div itemprop="image"></div><div class="ecwid-title" itemprop="name" content="Cuaderno América"></div><div itemtype="http://schema.org/Offer" itemscope itemprop="offers"><div class="ecwid-productBrowser-price ecwid-price" itemprop="price" content="50"><div itemprop="priceCurrency" content="ARS"></div></div></div><div customprop="options"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?14419917&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>							
-            </div>
+            <div class="col-lg-6 producto-home">
+                <article class="product-miniature js-product-miniature" data-id-product="3" data-id-product-attribute="13" itemscope="" itemtype="http://schema.org/Product">
+                    <div class="thumbnail-container">
+                        <a href="http://192.168.2.104/PrestaShop/es/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm" class="thumbnail product-thumbnail">
+                            <img src="http://192.168.2.104/PrestaShop/3-home_default/the-best-is-yet-to-come-framed-poster.jpg" alt="The best is yet to come' Framed poster" data-full-size-image-url="http://192.168.2.104/PrestaShop/3-large_default/the-best-is-yet-to-come-framed-poster.jpg">
+                        </a>
+                        <div class="product-description">        
+                            <h2 class="h3 product-title" itemprop="name"><a href="http://192.168.2.104/PrestaShop/es/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm">The best is yet to come'...</a></h2>
+                            <div class="product-price-and-shipping">
+                                <span class="sr-only">Precio</span>
+                                <span itemprop="price" class="price">35,09&nbsp;ARS</span>
+                            </div>
+                        </div>
+                        <ul class="product-flags"></ul>
+                        <div class="highlighted-informations no-variants hidden-sm-down">
+                            <a class="quick-view" href="#" data-link-action="quickview">
+                                <i class="material-icons search"></i> Vista rápida
+                            </a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </div>
@@ -89,8 +109,27 @@
     <div class="container">
         <div class="section-top-border">
             <div class="row align-items-center">
-                <div class="col-lg-4 col-md-5 anuncio">
-                    <div class="ecwid ecwid-SingleProduct-v2 ecwid-SingleProduct-v2-bordered ecwid-SingleProduct-v2-centered ecwid-Product ecwid-Product-110806963" itemscope itemtype="http://schema.org/Product" data-single-product-id="110806963"><div itemprop="image"></div><div class="ecwid-title" itemprop="name" content="Cuaderno América"></div><div itemtype="http://schema.org/Offer" itemscope itemprop="offers"><div class="ecwid-productBrowser-price ecwid-price" itemprop="price" content="50"><div itemprop="priceCurrency" content="ARS"></div></div></div><div customprop="options"></div><div customprop="addtobag"></div></div><script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?14419917&data_platform=singleproduct_v2" charset="utf-8"></script><script type="text/javascript">xProduct()</script>							
+                <div class="col-lg-4 col-md-5 anuncio producto-home">
+                    <article class="product-miniature js-product-miniature" data-id-product="3" data-id-product-attribute="13" itemscope="" itemtype="http://schema.org/Product">
+                        <div class="thumbnail-container">
+                            <a href="http://192.168.2.104/PrestaShop/es/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm" class="thumbnail product-thumbnail">
+                                <img src="http://192.168.2.104/PrestaShop/3-home_default/the-best-is-yet-to-come-framed-poster.jpg" alt="The best is yet to come' Framed poster" data-full-size-image-url="http://192.168.2.104/PrestaShop/3-large_default/the-best-is-yet-to-come-framed-poster.jpg">
+                            </a>
+                            <div class="product-description">        
+                                <h2 class="h3 product-title" itemprop="name"><a href="http://192.168.2.104/PrestaShop/es/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm">The best is yet to come'...</a></h2>
+                                <div class="product-price-and-shipping">
+                                    <span class="sr-only">Precio</span>
+                                    <span itemprop="price" class="price">35,09&nbsp;ARS</span>
+                                </div>
+                            </div>
+                            <ul class="product-flags"></ul>
+                            <div class="highlighted-informations no-variants hidden-sm-down">
+                                <a class="quick-view" href="#" data-link-action="quickview">
+                                    <i class="material-icons search"></i> Vista rápida
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
                 <div class="col-lg-8 col-md-7 mt-sm-20" id="pago">
                     <div class="pago">
@@ -119,7 +158,7 @@
     <div class="container align-items-center">
         <div class="row">
             <div class="col-lg-12">
-                <a href="tienda.html" class="primary-btn2 header-btn ir-tienda">Ir a la tienda!</a>
+                <a href="{$url_tienda}" class="primary-btn2 header-btn ir-tienda">Ir a la tienda!</a>
             </div>
         </div>
     </div>	
@@ -135,7 +174,7 @@
                 <p>
                     Envianos un mensaje a través de nuestro <button id="boton-chat" class="genric-btn info-border circle small boton-contacto">chat en linea</button>
                     , o vía <a target="_blank" href="https://wa.me/5491155798100" class="genric-btn info-border circle small boton-whatsapp boton-contacto">WhatsApp</a>.
-                    Alternativamente puedes enviarnos un correo electrónico a <a href="mailto:hola@cuadernosya.tk">hola@cuadernosya.tk</a>.
+                    También podés enviarnos un correo electrónico a <a href="mailto:hola@cuadernosya.tk">hola@cuadernosya.tk</a>.
                 </p>
             </div>
         </div>
