@@ -1,4 +1,5 @@
-{$url_tienda = {url entity='category' id=2}}
+{assign var='id_categoria_tienda' value=Configuration::get('PS_HOME_CATEGORY')}
+{$url_tienda = {url entity='category' id=$id_categoria_tienda}}
 
 <!-- start banner Area -->
 <section class="banner-area relative" id="home">
@@ -78,26 +79,7 @@
                 </p>
             </div>
             <div class="col-lg-6 producto-home">
-                <article class="product-miniature js-product-miniature" data-id-product="3" data-id-product-attribute="13" itemscope="" itemtype="http://schema.org/Product">
-                    <div class="thumbnail-container">
-                        <a href="http://192.168.2.104/PrestaShop/es/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm" class="thumbnail product-thumbnail">
-                            <img src="http://192.168.2.104/PrestaShop/3-home_default/the-best-is-yet-to-come-framed-poster.jpg" alt="The best is yet to come' Framed poster" data-full-size-image-url="http://192.168.2.104/PrestaShop/3-large_default/the-best-is-yet-to-come-framed-poster.jpg">
-                        </a>
-                        <div class="product-description">        
-                            <h2 class="h3 product-title" itemprop="name"><a href="http://192.168.2.104/PrestaShop/es/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm">The best is yet to come'...</a></h2>
-                            <div class="product-price-and-shipping">
-                                <span class="sr-only">Precio</span>
-                                <span itemprop="price" class="price">35,09&nbsp;ARS</span>
-                            </div>
-                        </div>
-                        <ul class="product-flags"></ul>
-                        <div class="highlighted-informations no-variants hidden-sm-down">
-                            <a class="quick-view" href="#" data-link-action="quickview">
-                                <i class="material-icons search"></i> Vista rápida
-                            </a>
-                        </div>
-                    </div>
-                </article>
+                {hook h='displayHomeProducts' time=0}
             </div>
         </div>
     </div>
@@ -110,26 +92,7 @@
         <div class="section-top-border">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-5 anuncio producto-home">
-                    <article class="product-miniature js-product-miniature" data-id-product="3" data-id-product-attribute="13" itemscope="" itemtype="http://schema.org/Product">
-                        <div class="thumbnail-container">
-                            <a href="http://192.168.2.104/PrestaShop/es/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm" class="thumbnail product-thumbnail">
-                                <img src="http://192.168.2.104/PrestaShop/3-home_default/the-best-is-yet-to-come-framed-poster.jpg" alt="The best is yet to come' Framed poster" data-full-size-image-url="http://192.168.2.104/PrestaShop/3-large_default/the-best-is-yet-to-come-framed-poster.jpg">
-                            </a>
-                            <div class="product-description">        
-                                <h2 class="h3 product-title" itemprop="name"><a href="http://192.168.2.104/PrestaShop/es/art/3-13-the-best-is-yet-to-come-framed-poster.html#/19-dimension-40x60cm">The best is yet to come'...</a></h2>
-                                <div class="product-price-and-shipping">
-                                    <span class="sr-only">Precio</span>
-                                    <span itemprop="price" class="price">35,09&nbsp;ARS</span>
-                                </div>
-                            </div>
-                            <ul class="product-flags"></ul>
-                            <div class="highlighted-informations no-variants hidden-sm-down">
-                                <a class="quick-view" href="#" data-link-action="quickview">
-                                    <i class="material-icons search"></i> Vista rápida
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                    {hook h='displayHomeProducts' time=1}
                 </div>
                 <div class="col-lg-8 col-md-7 mt-sm-20" id="pago">
                     <div class="pago">
