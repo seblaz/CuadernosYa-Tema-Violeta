@@ -5,8 +5,9 @@
     "private": true,
     "main": "index.js",
     "scripts": {
-        "watch": "webpack -w",
-        "build": "webpack"
+        "watch": "webpack -w --mode=development",
+        "build": "webpack --mode=production",
+        "buildev": "webpack --mode=development"
     },
     "author": "PrestaShop",
     "license": "AFL-3.0",
@@ -28,6 +29,7 @@
         "linearicons": "1.0.1",
         "material-design-icons": "3.0.1",
         "node-sass": "4.9.2",
+        "optimize-css-assets-webpack-plugin": "5.0.0",
         "popper.js": "1.14.3",
         "postcss-flexibility": "2.0.0",
         "postcss-loader": "2.1.6",

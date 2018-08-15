@@ -52,7 +52,7 @@
       logged_in_greeting="¡Hola! ¿Cómo podemos ayudarte?"
       logged_out_greeting="¡Hola! ¿Cómo podemos ayudarte?"
       greeting_dialog_delay="10"
-      greeting_dialog_display="fade"
+      greeting_dialog_display="{if $page.page_name == 'index'}fade{else}hide{/if}"
       >
       </div>
     {/block}

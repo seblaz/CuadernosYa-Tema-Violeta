@@ -25,7 +25,8 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const development = true;
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 let config = {
   entry: {
@@ -52,7 +53,7 @@ let config = {
             {
               loader: 'css-loader',
               options: {
-                minimize: false,
+                minimize: true,
                 autoprefixer: true
               }
             },
@@ -88,28 +89,57 @@ let config = {
   ]
 };
 
-if(development){
+// if(development){
   
-  config.devtool = 'inline-source-map';
+//   config.devtool = 'inline-source-map';
 
-}else{
-  config.plugins.push(
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: false,
-      compress: {
-        sequences: true,
-        conditionals: true,
-        booleans: true,
-        if_return: true,
-        join_vars: true,
-        drop_console: true
-      },
-      output: {
-        comments: false
-      },
-      minimize: true
-    })
-  ); 
-}
+// }else{
+//   config.plugins.push(
+//     new webpack.optimize.UglifyJsPlugin({
+//       sourceMap: false,
+//       compress: {
+//         sequences: true,
+//         conditionals: true,
+//         booleans: true,
+//         if_return: true,
+//         join_vars: true,
+//         drop_console: true
+//       },
+//       output: {
+//         comments: false
+//       },
+//       minimize: true
+//     })
+//   ); 
+// }
 
-module.exports = config;
+module.exports = (env, argv) => {
+
+  if(typeof argv.mode == 'undefined'){
+    argv.mode = 'production';
+  }
+
+  if (argv.mode == 'development') {
+    
+    console.log('development!');
+    config.devtool = 'inline-source-map';
+  
+  }else if (argv.mode == 'production') {
+    
+    console.log('production!');
+    config.optimization = {
+      minimizer: [
+        new UglifyJsPlugin({
+          cache: true,
+          parallel: true,
+          sourceMap: false // set to true if you want JS source maps
+        }),
+        new OptimizeCSSAssetsPlugin({})
+      ]
+    }
+  }else{
+    console.log('none = something wrong');
+  }
+
+  return config;
+};
