@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {foreach $linkBlocks as $linkBlock}
-  <div class="col-md-6 wrapper">
+  <div class="col-lg-3 col-md-3 wrapper footer-links">
     <h6>{$linkBlock.title}</h6>
     {assign var=_expand_id value=10|mt_rand:100000}
     <ul id="footer_sub_menu_{$_expand_id}" class="footer-nav">

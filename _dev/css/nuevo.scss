@@ -3324,3 +3324,17 @@ div.product-add-to-cart > div > div.add > button > i{
     display: block;
   }
 }
+
+#footer > div > div:nth-child(1) > div.col-lg-6.col-md-9 > div > p{
+  color: white;
+}
+
+.footer-links{
+  margin-top: 40px;
+}
+
+@include media-breakpoint-down(lg) {
+  #footer > div > div:nth-child(1) > div.col-lg-3.col-md-12 > div{
+    margin-bottom: 0;
+  }
+}

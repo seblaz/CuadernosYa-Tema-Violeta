@@ -26,7 +26,7 @@
   <div class="row">
     <div class="col-lg-3  col-md-3">
       {block name='hook_footer'}
-        {hook h='displayFooter'}
+        {hook h='displayFooterBefore'}
       {/block}
     </div>
     <div class="col-lg-6  col-md-9">
@@ -63,9 +63,12 @@
     </div>
   </div>
 
-  <div class="row linkblock">
+  <div class="row">
+    {block name='hook_footer'}
+      {hook h='displayFooter'}
+    {/block}
     {block name='hook_footer_after'}
-      {hook h='displayFooterBefore'}
+      {hook h='displayFooterAfter'}
     {/block}
   </div>
   <div class="row footer-bottom d-flex justify-content-between">
