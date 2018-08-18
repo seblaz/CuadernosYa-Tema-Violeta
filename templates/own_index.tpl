@@ -43,7 +43,7 @@
                 <span class="lnr lnr-rocket"></span>
                 <h4>Entrega en Fiuba</h4>
                 <p>
-                    Te lo entregamos directamente en la fiuba. 
+                    Te lo entregamos directamente en la fiuba (Sede Paseo Colón). Por el momento no relizamos entregas en otras sedes.
                 </p>
                 <a href="#entrega" class="text-uppercase primary-btn2 primary-border circle">Ver detalles</a>
             </div>
