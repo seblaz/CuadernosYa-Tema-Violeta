@@ -33,7 +33,8 @@
 
   <body id="{$page.page_name}" class="{$page.body_classes|classnames}">
 
-    {block name='hook_after_body_opening_tag'}
+    {if $page.page_name == 'index'}
+    {block name='facebook_messenger'}
       <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>(function(d, s, id) {
@@ -52,10 +53,11 @@
       logged_in_greeting="¡Hola! ¿Cómo podemos ayudarte?"
       logged_out_greeting="¡Hola! ¿Cómo podemos ayudarte?"
       greeting_dialog_delay="10"
-      greeting_dialog_display="{if $page.page_name == 'index'}fade{else}hide{/if}"
+      greeting_dialog_display="fade"
       >
       </div>
     {/block}
+    {/if}
 
     {block name='hook_after_body_opening_tag'}
       {hook h='displayAfterBodyOpeningTag'}

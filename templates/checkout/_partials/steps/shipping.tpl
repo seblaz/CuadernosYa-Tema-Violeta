@@ -28,7 +28,11 @@
   <div id="hook-display-before-carrier">
     {$hookDisplayBeforeCarrier nofilter}
   </div>
-
+  <div>
+    <p class="shipping-message">
+      {l s='Cuando tu pedido esté listo te enviaremos un correo de confirmación y te contactaremos por WhatsApp para coordinar la entrega.' d='Shop.Theme.Checkout'}
+    </p>
+  </div>
   <div class="delivery-options-list">
     {if $delivery_options|count}
       <form

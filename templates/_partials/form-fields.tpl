@@ -31,6 +31,12 @@
 {else}
 
   <div class="form-group row {if !empty($field.errors)}has-error{/if}">
+    {if $field.name == "phone_mobile"}
+      <p class="col-12 form-control-comment{if $field.required} required{/if}">
+        Utilizaremos este número para contactarte por WhatsApp una vez que tu pedido esté listo para la entrega:
+      </p>
+    {/if}
+
     <label class="col-md-3 form-control-label{if $field.required} required{/if}">
       {if $field.type !== 'checkbox'}
         {$field.label}
