@@ -43,7 +43,7 @@
                 <span class="lnr lnr-rocket"></span>
                 <h4>Entrega en Fiuba</h4>
                 <p>
-                    Te lo entregamos directamente en la fiuba (Sede Paseo Colón). Por el momento no relizamos entregas en otras sedes.
+                    Te lo entregamos directamente en la fiuba (Sede Paseo Colón).
                 </p>
                 <a href="#entrega" class="text-uppercase primary-btn2 primary-border circle">Ver detalles</a>
             </div>
@@ -75,7 +75,7 @@
             <div class="col-lg-6 about-left">
                 <h1>Vamos al lugar donde estás</h1>
                 <p>
-                    Una vez que realices el pedido online nos contactamos con vos para coordinar la entrega en la fiuba. Garantizamos que tu pedido estará disponible para la entrega en un máximo de tres días hábiles.
+                    Una vez que realices el pedido online nos contactaremos con vos para coordinar la entrega en la fiuba (por el momento solo relizamos entregas en la sede Paseo Colón). Además garantizamos que tu pedido estará disponible para la entrega en un máximo de tres días hábiles.
                 </p>
             </div>
             <div class="col-lg-6 producto-home">

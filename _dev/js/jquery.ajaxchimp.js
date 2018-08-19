@@ -16,7 +16,7 @@
             'en': null,
             'es': {
 
-                0 : 'Te enviamos un email de confirmacion.',
+                0 : 'En breve te enviaremos un email de confirmacion.',
                 1 : 'Ingresá un correo electrónico válido.',
                 2 : 'El correo electrónico debe contener un @.',
                 3 : 'La parte del dominio es inválida (la que está después del @).',
