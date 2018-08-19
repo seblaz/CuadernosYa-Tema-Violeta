@@ -39,7 +39,7 @@
   {block name='guest_to_customer'}
     <form action="{$urls.pages.guest_tracking}" method="post">
       <header>
-        <h1 class="h3">{l s='Transform your guest account into a customer account and enjoy:' d='Shop.Theme.Customeraccount'}</h1>
+        <h1 class="h3 mb-10 mt-30">{l s='Transform your guest account into a customer account and enjoy:' d='Shop.Theme.Customeraccount'}</h1>
         <ul>
           <li> -{l s='Personalized and secure access' d='Shop.Theme.Customeraccount'}</li>
           <li> -{l s='Fast and easy checkout' d='Shop.Theme.Customeraccount'}</li>
@@ -49,7 +49,7 @@
 
       <section class="form-fields">
 
-        <label>
+        <label class="mt-10 mb-10">
           <span>{l s='Set your password:' d='Shop.Forms.Labels'}</span>
           <input type="password" data-validate="isPasswd" name="password" value="">
         </label>

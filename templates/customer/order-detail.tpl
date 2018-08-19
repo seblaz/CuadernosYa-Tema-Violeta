@@ -43,7 +43,7 @@
               </strong>
             </div>
             {if $order.details.reorder_url}
-              <div class="col-3 text-xs-right">
+              <div class="col-3 text-right">
                 <a href="{$order.details.reorder_url}" class="button-primary">{l s='Reorder' d='Shop.Theme.Actions'}</a>
               </div>
             {/if}
@@ -82,7 +82,7 @@
   {block name='order_history'}
     <section id="order-history" class="box">
       <h3>{l s='Follow your order\'s status step-by-step' d='Shop.Theme.Customeraccount'}</h3>
-      <table class="table table-striped table-bordered table-labeled hidden-xs-down">
+      <table class="table table-striped table-bordered table-labeled d-none d-md-table hidden-xs-down">
         <thead class="thead-default">
           <tr>
             <th>{l s='Date' d='Shop.Theme.Global'}</th>
@@ -102,7 +102,7 @@
           {/foreach}
         </tbody>
       </table>
-      <div class="hidden-sm-up history-lines">
+      <div class="d-md-none history-lines">
         {foreach from=$order.history item=state}
           <div class="history-line">
             <div class="date">{$state.history_date}</div>
@@ -126,14 +126,14 @@
 
   {block name='addresses'}
     <div class="addresses">
-      {if $order.addresses.delivery}
+      {* {if $order.addresses.delivery}
         <div class="col-lg-6 col-md-6 col-sm-6">
           <article id="delivery-address" class="box">
             <h4>{l s='Delivery address %alias%' d='Shop.Theme.Checkout' sprintf=['%alias%' => $order.addresses.delivery.alias]}</h4>
             <address>{$order.addresses.delivery.formatted nofilter}</address>
           </article>
         </div>
-      {/if}
+      {/if} *}
 
       <div class="col-lg-6 col-md-6 col-sm-6">
         <article id="invoice-address" class="box">
@@ -157,8 +157,8 @@
 
   {block name='order_carriers'}
     {if $order.shipping}
-      <div class="box">
-        <table class="table table-striped table-bordered hidden-sm-down">
+      <div class="box shipping">
+        <table class="table table-striped table-bordered d-none d-md-table">
           <thead class="thead-default">
             <tr>
               <th>{l s='Date' d='Shop.Theme.Global'}</th>
@@ -180,24 +180,24 @@
             {/foreach}
           </tbody>
         </table>
-        <div class="hidden-md-up shipping-lines">
+        <div class="d-md-none shipping-lines">
           {foreach from=$order.shipping item=line}
             <div class="shipping-line">
               <ul>
                 <li>
-                  <strong>{l s='Date' d='Shop.Theme.Global'}</strong> {$line.shipping_date}
+                  <strong>{l s='Date' d='Shop.Theme.Global'}</strong>: {$line.shipping_date}
                 </li>
                 <li>
-                  <strong>{l s='Carrier' d='Shop.Theme.Checkout'}</strong> {$line.carrier_name}
+                  <strong>{l s='Carrier' d='Shop.Theme.Checkout'}</strong>: {$line.carrier_name}
                 </li>
                 <li>
-                  <strong>{l s='Weight' d='Shop.Theme.Checkout'}</strong> {$line.shipping_weight}
+                  <strong>{l s='Weight' d='Shop.Theme.Checkout'}</strong>: {$line.shipping_weight}
                 </li>
                 <li>
-                  <strong>{l s='Shipping cost' d='Shop.Theme.Checkout'}</strong> {$line.shipping_cost}
+                  <strong>{l s='Shipping cost' d='Shop.Theme.Checkout'}</strong>: {$line.shipping_cost}
                 </li>
                 <li>
-                  <strong>{l s='Tracking number' d='Shop.Theme.Checkout'}</strong> {$line.tracking nofilter}
+                  <strong>{l s='Tracking number' d='Shop.Theme.Checkout'}</strong>: {$line.tracking nofilter}
                 </li>
               </ul>
             </div>
