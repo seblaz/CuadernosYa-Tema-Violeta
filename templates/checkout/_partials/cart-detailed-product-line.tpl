@@ -85,10 +85,10 @@
                 <div class="modal-body">
                   {foreach from=$customization.fields item="field"}
                     <div class="product-customization-line row">
-                      <div class="col-sm-3 col-xs-4 label">
+                      <div class="col-sm-3 col-4 label">
                         {$field.label}
                       </div>
-                      <div class="col-sm-9 col-xs-8 value">
+                      <div class="col-sm-9 col-8 value">
                         {if $field.type == 'text'}
                           {if (int)$field.id_module}
                             {$field.text nofilter}
@@ -114,7 +114,7 @@
   <div class="product-line-grid-right product-line-actions col-md-5 col-12">
     <div class="row">
       <div class="col-4 d-md-none"></div>
-      <div class="col-lg-8 col-6">
+      <div class="col-md-8 col-6">
         <div class="row">
           <div class="col-md-6 col-6 qty">
             {if isset($product.is_gift) && $product.is_gift}

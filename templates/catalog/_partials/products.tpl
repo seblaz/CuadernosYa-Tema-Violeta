@@ -38,7 +38,7 @@
   <div class="hidden-md-up text-xs-right up">
     <a href="#wrapper" class="btn btn-primary">
       {l s='Back to top' d='Shop.Theme.Actions'}
-      <i class="material-icons">&#xE316;</i>
+      <span class="lnr lnr-chevron-up-circle"></span>
     </a>
   </div>
 </div>

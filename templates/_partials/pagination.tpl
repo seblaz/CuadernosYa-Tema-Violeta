@@ -24,13 +24,13 @@
  *}
 <div class="container">
 <nav class="pagination row">
-  <div class="col-sm-5 col-xs-12">
+  <div class="col-sm-5 col-12">
     {block name='pagination_summary'}
       {l s='Showing %from%-%to% of %total% item(s)' d='Shop.Theme.Catalog' sprintf=['%from%' => $pagination.items_shown_from ,'%to%' => $pagination.items_shown_to, '%total%' => $pagination.total_items]}
     {/block}
   </div>
 
-  <div class="col-sm-6 offset-sm-1 pr-0  col-xs-12">
+  <div class="col-sm-6 offset-sm-1 pr-0  col-12">
     {block name='pagination_page_list'}
      {if $pagination.should_be_displayed}
         <ul class="page-list clearfix text-center">

@@ -38,15 +38,15 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    {* <div class="col-md-6">
       <div class="card noshadow">
         <div class="card-block">
           <h4 class="h5 black addresshead">{l s='Your Delivery Address' d='Shop.Theme.Checkout'}</h4>
           {$customer.addresses[$cart.id_address_delivery]['formatted'] nofilter}
         </div>
       </div>
-    </div>
-    <div class="col-md-6">
+    </div> *}
+    <div class="col-12">
       <div class="card noshadow">
         <div class="card-block">
           <h4 class="h5 black addresshead">{l s='Your Invoice Address' d='Shop.Theme.Checkout'}</h4>

@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
-<div class="links wrapper col-lg-3 col-md-3 footer-links">
+<div class="links wrapper col-lg-3 col-md-4 footer-links">
   <h6>{l s='Information' d='Modules.Legalcompliance.Shop'}</h6>
   <ul class="footer-nav" id="footer_eu_about_us_list">
     {foreach from=$cms_links item=cms_link}
