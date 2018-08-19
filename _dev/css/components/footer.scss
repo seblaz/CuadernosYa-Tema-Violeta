@@ -147,6 +147,7 @@
 .footer-container {
   margin-top: $medium-space;
   padding-top: $medium-space;
+  padding-bottom: $medium-space;
   overflow: hidden;
   box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.3);
   li {
@@ -186,15 +187,15 @@
         font-size: 1rem;
       }
       ul {
-        background-color: $gray-lighter;
+        // background-color: $gray-lighter;
         margin-bottom: 0;
         > li {
-          padding: 0.625rem;
-          border-bottom: 1px solid white;
-          font-weight: bold;
-          a {
-            color: $gray-darker;
-          }
+          // padding: 0.625rem;
+          // border-bottom: 1px solid white;
+          // font-weight: bold;
+          // a {
+          //   color: $gray-darker;
+          // }
         }
       }
     }
