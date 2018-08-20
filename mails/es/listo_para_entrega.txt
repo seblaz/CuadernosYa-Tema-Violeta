@@ -13,7 +13,7 @@ pedidos" [{history_url}] de su cuenta de cliente,
 haciendo clic en [{my_account_url}] en nuestra
 tienda. 
 
-Si tiene una cuenta de invitado, puede seguir su pedido desde la sección: "Seguimiento de invitado" [{guest_tracking_url}?id_order={order_name}] de nuestra tienda.
+Si tiene una cuenta de invitado, puede seguir su pedido desde la sección: "Seguimiento de invitado" [{guest_tracking_url}?order_reference={order_name}] de nuestra tienda.
 
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 

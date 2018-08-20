@@ -24,12 +24,15 @@
  *}
 {extends file='checkout/cart.tpl'}
 
+{assign var='id_categoria_tienda' value=Configuration::get('PS_HOME_CATEGORY')}
+{$url_tienda = {url entity='category' id=$id_categoria_tienda}}
+
 {block name='content' append}
   {hook h='displayCrossSellingShoppingCart'}
 {/block}
 
 {block name='continue_shopping' append}
-  <a class="label" href="{$urls.pages.index}">
+  <a class="label" href="{$url_tienda}">
     <i class="material-icons">chevron_left</i>{l s='Continue shopping' d='Shop.Theme.Actions'}
   </a>
 {/block}

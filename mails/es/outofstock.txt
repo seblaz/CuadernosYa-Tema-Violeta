@@ -16,7 +16,7 @@ tienda.
 
 Si tiene una cuenta de invitado, puede seguir su pedido desde la
 sección: "Seguimiento de invitado"
-[{guest_tracking_url}?id_order={order_name}] de
+[{guest_tracking_url}?order_reference={order_name}] de
 nuestra tienda. 
 
 {shop_name} [{shop_url}] powered by

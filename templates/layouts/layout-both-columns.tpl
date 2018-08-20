@@ -74,14 +74,13 @@
         {/block}
       </header>
 
-      {block name='notifications'}
-        {include file='_partials/notifications.tpl'}
-      {/block}
-
       {if $page.page_name == 'index'}
         {include file='own_index.tpl'}
       {else}
       <section id="wrapper">
+        {block name='notifications'}
+          {include file='_partials/notifications.tpl'}
+        {/block}
         {hook h="displayWrapperTop"}
         <div class="container">
           {block name='breadcrumb'}
