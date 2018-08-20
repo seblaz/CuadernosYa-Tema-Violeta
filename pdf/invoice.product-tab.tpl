@@ -22,21 +22,26 @@
  * @license   https://opensource.org/licenses/OSL-3.0 Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+{if isset($layout.before_discount)}
+{$extra_width = $layout.tax_code.width/6}
+{else}
+{$extra_width = $layout.tax_code.width/5}	
+{/if}
 <table class="product" width="100%" cellpadding="4" cellspacing="0">
 
 	<thead>
 	<tr>
-		<th class="product header small" width="{$layout.reference.width}%">{l s='Reference' d='Shop.Pdf' pdf='true'}</th>
-		<th class="product header small" width="{$layout.product.width}%">{l s='Product' d='Shop.Pdf' pdf='true'}</th>
+		<th class="product header small" width="{$layout.reference.width + $extra_width}%">{l s='Reference' d='Shop.Pdf' pdf='true'}</th>
+		<th class="product header small" width="{$layout.product.width + $extra_width}%">{l s='Product' d='Shop.Pdf' pdf='true'}</th>
 		{* <th class="product header small" width="{$layout.tax_code.width}%">{l s='Tax Rate' d='Shop.Pdf' pdf='true'}</th> *}
 
 		{if isset($layout.before_discount)}
-			<th class="product header small" width="{$layout.unit_price_tax_excl.width}%">{l s='Base price' d='Shop.Pdf' pdf='true'} <br /> {l s='(Tax excl.)' d='Shop.Pdf' pdf='true'}</th>
+			<th class="product header small" width="{$layout.unit_price_tax_excl.width + $extra_width}%">{l s='Base price' d='Shop.Pdf' pdf='true'} <br /> {l s='(Tax excl.)' d='Shop.Pdf' pdf='true'}</th>
 		{/if}
 
-		<th class="product header-right small" width="{$layout.unit_price_tax_excl.width}%">{l s='Unit Price' d='Shop.Pdf' pdf='true'} <br /> {l s='(Tax excl.)' d='Shop.Pdf' pdf='true'}</th>
-		<th class="product header small" width="{$layout.quantity.width}%">{l s='Qty' d='Shop.Pdf' pdf='true'}</th>
-		<th class="product header-right small" width="{$layout.total_tax_excl.width}%">{l s='Total' d='Shop.Pdf' pdf='true'} <br /> {l s='(Tax excl.)' d='Shop.Pdf' pdf='true'}</th>
+		<th class="product header-right small" width="{$layout.unit_price_tax_excl.width + $extra_width}%">{l s='Unit Price' d='Shop.Pdf' pdf='true'} <br /> {l s='(Tax excl.)' d='Shop.Pdf' pdf='true'}</th>
+		<th class="product header small" width="{$layout.quantity.width + $extra_width}%">{l s='Qty' d='Shop.Pdf' pdf='true'}</th>
+		<th class="product header-right small" width="{$layout.total_tax_excl.width + $extra_width}%">{l s='Total' d='Shop.Pdf' pdf='true'} <br /> {l s='(Tax excl.)' d='Shop.Pdf' pdf='true'}</th>
 	</tr>
 	</thead>
 
