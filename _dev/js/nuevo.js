@@ -209,4 +209,13 @@ $(document).ready(function(){
   $('#boton-chat').click(function(event){
     FB.CustomerChat.showDialog();
   });
+
+  var array = $('.thumbnail-container .product-flags');
+  $.each(array, function(index, value){
+    var elem = $(value).find('.product-flag.new');
+    if(elem.length>0){
+      var pack = $(value).find('.product-flag.pack');
+      pack.css('margin-top', '+=60px');
+    }
+  });
 });
