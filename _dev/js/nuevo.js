@@ -219,3 +219,7 @@ $(document).ready(function(){
     }
   });
 });
+
+$(document).ready(function(){
+  $('.btn.btn-primary.add-to-cart').prop('disabled', false);
+});
