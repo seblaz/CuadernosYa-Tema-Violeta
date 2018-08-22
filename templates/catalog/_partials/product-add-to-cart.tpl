@@ -23,6 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
     {* <input id="demo_vertical" type="text" value="" name="demo_vertical" class="input-group"> *}
+
 <div class="product-add-to-cart">
   {if !$configuration.is_catalog}
     <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
@@ -44,6 +45,9 @@
         <div class="add">
           <button
             class="btn btn-primary add-to-cart"
+            {if $main_load == true}
+              disabled
+            {/if}
             data-button-action="add-to-cart"
             type="submit"
             {if !$product.add_to_cart_url}

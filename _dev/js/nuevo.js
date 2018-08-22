@@ -218,8 +218,6 @@ $(document).ready(function(){
       pack.css('margin-top', '+=60px');
     }
   });
-
-  $('.btn.btn-primary.add-to-cart').prop('disabled', true);
 });
 
 $(document).ready(function(){
