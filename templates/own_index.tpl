@@ -10,9 +10,9 @@
                 <h1>
                     Tu <span>librería</span><br>
                     al alcance <br>
-                    de tu <span>Mano</span>							
+                    de tu <span>mano</span>							
                 </h1>
-                <a href="{$url_tienda}" class="primary-btn2 header-btn text-uppercase">Ir a la tienda!</a>
+                <a href="{$url_tienda}" class="primary-btn2 header-btn text-uppercase">{l s='Ir a la tienda!' d='Shop.Theme.Index'}</a>
             </div>												
         </div>
     </div>
@@ -25,7 +25,7 @@
         <div class="row d-flex justify-content-center">
             <div class="menu-content pb-70 col-lg-8">
                 <div class="title text-center">
-                    <h1 class="mb-10">¿Cómo funciona?</h1>
+                    <h1 class="mb-10">{l s='¿Cómo funciona?' d='Shop.Theme.Index'}</h1>
                 </div>
             </div>
         </div>
@@ -33,35 +33,35 @@
         <div class="row">
             <div class="sigle-service col-lg-3 col-md-6 funcionamiento">
                 <span class="lnr lnr-cart"></span>
-                <h4>Pedido online</h4>
+                <h4>{l s='Pedido online' d='Shop.Theme.Index'}</h4>
                 <p>
-                    Realiza tu pedido a través de nuestro sitio web.
+                    {l s='Realiza tu pedido a través de nuestro sitio web.' d='Shop.Theme.Index'}
                 </p>
-                <a href="{$url_tienda}" class="text-uppercase primary-btn2 primary-border circle">Ir a la tienda!</a>
+                <a href="{$url_tienda}" class="text-uppercase primary-btn2 primary-border circle">{l s='Ir a la tienda!' d='Shop.Theme.Index'}</a>
             </div>
             <div class="sigle-service col-lg-3 col-md-6 funcionamiento">
                 <span class="lnr lnr-rocket"></span>
-                <h4>Entrega en Fiuba</h4>
+                <h4>{l s='Entrega en Fiuba' d='Shop.Theme.Index'}</h4>
                 <p>
-                    Te lo entregamos directamente en la fiuba (Sede Paseo Colón).
+                    {l s='Te lo entregamos directamente en la fiuba (Sede Paseo Colón).' d='Shop.Theme.Index'}
                 </p>
-                <a href="#entrega" class="text-uppercase primary-btn2 primary-border circle">Ver detalles</a>
+                <a href="#entrega" class="text-uppercase primary-btn2 primary-border circle">{l s='Ver detalles' d='Shop.Theme.Index'}</a>
             </div>
             <div class="sigle-service col-lg-3 col-md-6 funcionamiento">
                 <span class="lnr lnr-gift"></span>
-                <h4>Pago contra entrega</h4>
+                <h4>{l s='Pago contra entrega' d='Shop.Theme.Index'}</h4>
                 <p>
-                    Abona al momento de la entrega.
+                    {l s='Aboná al momento de la entrega.' d='Shop.Theme.Index'}
                 </p>
-                <a href="#pago" class="text-uppercase primary-btn2 primary-border circle">Ver detalles</a>
+                <a href="#pago" class="text-uppercase primary-btn2 primary-border circle">{l s='Ver detalles' d='Shop.Theme.Index'}</a>
             </div>
             <div class="sigle-service col-lg-3 col-md-6 funcionamiento">
                 <span class="lnr lnr-redo"></span>
-                <h4>Devoluciones</h4>
+                <h4>{l s='Devoluciones' d='Shop.Theme.Index'}</h4>
                 <p>
-                    Podés devolver tu pedido hasta 15 días después de entregado.
+                    {l s='Podés devolver tu pedido hasta 15 días después de entregado.' d='Shop.Theme.Index'}
                 </p>
-                <a href="#devolucion" class="text-uppercase primary-btn2 primary-border circle">Ver detalles</a>
+                <a href="#devolucion" class="text-uppercase primary-btn2 primary-border circle">{l s='Ver detalles' d='Shop.Theme.Index'}</a>
             </div>
         </div>
     </div>	
@@ -73,9 +73,9 @@
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 about-left">
-                <h1>Vamos al lugar donde estás</h1>
+                <h1>{l s='Vamos al lugar donde estás' d='Shop.Theme.Index'}</h1>
                 <p>
-                    Una vez que realices el pedido online nos contactaremos con vos para coordinar la entrega en la fiuba (por el momento solo relizamos entregas en la sede Paseo Colón). Además garantizamos que tu pedido estará disponible para la entrega en un máximo de tres días hábiles.
+                    {l s='Una vez que realices el pedido online nos contactaremos con vos para coordinar la entrega en la fiuba (por el momento solo relizamos entregas en la sede Paseo Colón). Además garantizamos que tu pedido estará disponible para la entrega en un máximo de tres días hábiles.' d='Shop.Theme.Index'}
                 </p>
             </div>
             <div class="col-lg-6 producto-home">
@@ -96,17 +96,18 @@
                 </div>
                 <div class="col-lg-8 col-md-7 mt-sm-20" id="pago">
                     <div class="pago">
-                        <h3 class="mb-30">Paga solo por lo que recibes</h3>
+                        <h3 class="mb-30">{l s='Pagá solo por lo que recibís' d='Shop.Theme.Index'}</h3>
                         <p>
-                            No es necesario que adelantes dinero, paga una vez que tengas tus productos en tus manos.
+                            {l s='No es necesario que adelantes dinero, pagá una vez que tengas tus productos en tus manos.' d='Shop.Theme.Index'}
                         </p>
                     </div>
                     <div class="devoluciones" id="devolucion" >
-                        <h3 class="mb-30">Devoluciones sin condiciones</h3>								
+                        <h3 class="mb-30">{l s='Devoluciones sin condiciones' d='Shop.Theme.Index'}</h3>
                         <p>
-                            Si querés devolver de manera total o parcial un pedido podés hacerlo sin cargo hasta 15 días luego de recibido el producto.
+                            {l s='Si querés devolver de manera total o parcial un pedido podés hacerlo sin cargo hasta 15 días luego de recibido el producto.
                             Al igual que la entrega, las devoluciones se coordinan para realizarlas en la fiuba.
-                            Si querés devolver algún producto contactanos <a href="#contacto">acá</a>.
+                            Si querés devolver algún producto contactanos ' d='Shop.Theme.Index'}
+                            <a href="#contacto">{l s='acá' d='Shop.Theme.Index'}</a>.
                         </p>
                     </div>
                 </div>
@@ -121,7 +122,7 @@
     <div class="container align-items-center">
         <div class="row">
             <div class="col-lg-12">
-                <a href="{$url_tienda}" class="primary-btn2 header-btn ir-tienda">Ir a la tienda!</a>
+                <a href="{$url_tienda}" class="primary-btn2 header-btn ir-tienda">{l s='Ir a la tienda!' d='Shop.Theme.Index'}</a>
             </div>
         </div>
     </div>	
@@ -136,8 +137,8 @@
                 <h3 class="mb-30">Contactanos</h3>
                 <p>
                     Envianos un mensaje a través de nuestro <button id="boton-chat" class="genric-btn info-border circle small boton-contacto">chat en linea</button>
-                    , o vía <a target="_blank" href="https://wa.me/5491155798100" class="genric-btn info-border circle small boton-whatsapp boton-contacto">WhatsApp</a>.
-                    También podés enviarnos un correo electrónico a <a href="mailto:hola@cuadernosya.tk">hola@cuadernosya.tk</a>.
+                    , o vía <a target="_blank" href="{l s='https://wa.me/5491155798100' d='Shop.Theme.Index'}" class="genric-btn info-border circle small boton-whatsapp boton-contacto">WhatsApp</a>.
+                    También podés enviarnos un correo electrónico a <a href="mailto:{l s='hola@cuadernosya.tk' d='Shop.Theme.Index'}">{l s='hola@cuadernosya.tk' d='Shop.Theme.Index'}</a>.
                 </p>
             </div>
         </div>
