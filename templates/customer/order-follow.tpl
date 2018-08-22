@@ -32,9 +32,9 @@
 
   {if $ordersReturn && count($ordersReturn)}
 
-    <h6>{l s='Here is a list of pending merchandise returns' d='Shop.Theme.Customeraccount'}</h6>
+    <h6 class="account-section-title">{l s='Here is a list of pending merchandise returns' d='Shop.Theme.Customeraccount'}</h6>
 
-    <table class="table table-striped table-bordered hidden-sm-down">
+    <table class="table table-striped table-bordered d-none d-md-table">
       <thead class="thead-default">
         <tr>
           <th>{l s='Order' d='Shop.Theme.Customeraccount'}</th>
@@ -62,9 +62,9 @@
         {/foreach}
       </tbody>
     </table>
-    <div class="order-returns hidden-md-up">
+    <div class="order-returns d-md-none">
       {foreach from=$ordersReturn item=return}
-        <div class="order-return">
+        <div class="order-return account-section-item">
           <ul>
             <li>
               <strong>{l s='Order' d='Shop.Theme.Customeraccount'}</strong>

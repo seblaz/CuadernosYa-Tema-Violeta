@@ -29,17 +29,17 @@
 {/block}
 
 {block name='page_content'}
-  <h6>{l s='Here are the orders you\'ve placed since your account was created.' d='Shop.Theme.Customeraccount'}</h6>
+  <h6 class="account-section-title">{l s='Here are the orders you\'ve placed since your account was created.' d='Shop.Theme.Customeraccount'}</h6>
 
   {if $orders}
-    <table class="table table-striped table-bordered table-labeled hidden-sm-down">
+    <table class="table table-striped table-bordered table-labeled d-none d-lg-table">
       <thead class="thead-default">
         <tr>
           <th>{l s='Order reference' d='Shop.Theme.Checkout'}</th>
           <th>{l s='Date' d='Shop.Theme.Checkout'}</th>
           <th>{l s='Total price' d='Shop.Theme.Checkout'}</th>
-          <th class="hidden-md-down">{l s='Payment' d='Shop.Theme.Checkout'}</th>
-          <th class="hidden-md-down">{l s='Status' d='Shop.Theme.Checkout'}</th>
+          <th>{l s='Payment' d='Shop.Theme.Checkout'}</th>
+          <th>{l s='Status' d='Shop.Theme.Checkout'}</th>
           <th>{l s='Invoice' d='Shop.Theme.Checkout'}</th>
           <th>&nbsp;</th>
         </tr>
@@ -49,8 +49,8 @@
           <tr>
             <th scope="row">{$order.details.reference}</th>
             <td>{$order.details.order_date}</td>
-            <td class="text-xs-right">{$order.totals.total.value}</td>
-            <td class="hidden-md-down">{$order.details.payment}</td>
+            <td class="text-right">{$order.totals.total.value}</td>
+            <td>{$order.details.payment}</td>
             <td>
               <span
                 class="label label-pill {$order.history.current.contrast}"
@@ -59,7 +59,7 @@
                 {$order.history.current.ostate_name}
               </span>
             </td>
-            <td class="text-sm-center hidden-md-down">
+            <td class="text-sm-center">
               {if $order.details.invoice_url}
                 <a href="{$order.details.invoice_url}"><i class="material-icons">&#xE415;</i></a>
               {else}
@@ -79,7 +79,7 @@
       </tbody>
     </table>
 
-    <div class="orders hidden-md-up">
+    <div class="orders d-lg-none">
       {foreach from=$orders item=order}
         <div class="order">
           <div class="row">
@@ -96,7 +96,7 @@
                 </span>
               </div>
             </div>
-            <div class="col-2 text-xs-right">
+            <div class="col-2 text-right">
                 <div>
                   <a href="{$order.details.details_url}" data-link-action="view-order-details" title="{l s='Details' d='Shop.Theme.Customeraccount'}">
                     <i class="material-icons">&#xE8B6;</i>
