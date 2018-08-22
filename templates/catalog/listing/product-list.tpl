@@ -27,6 +27,12 @@
 {block name='content'}
   <section id="main">
 
+    {block name='hook_search'}
+      <div class="d-md-none">
+      {hook h='displaySearch'}
+      </div>
+    {/block}
+
     {block name='product_list_header'}
       <h2 class="h2">{$listing.label}</h2>
     {/block}

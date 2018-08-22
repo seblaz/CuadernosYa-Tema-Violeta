@@ -3176,9 +3176,9 @@ div > .cart-line-product-actions{
 }
 
 @include media-breakpoint-only(lg) {
-  .product-price{
-    // padding-left: 30px;
-  }
+  // .product-price{
+  //   padding-left: 30px;
+  // }
 
   .cart-line-product-actions{
     text-align: right;
@@ -3377,4 +3377,13 @@ div.product-add-to-cart > div > div.add > button > i{
 #order-confirmation #registration-form{
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+#search_widget{
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  width: 100%;
+  input{
+    width: 100%;
+  }
 }
