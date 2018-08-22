@@ -43,8 +43,8 @@
   {/if}
   {block name='head_hreflang'}
       {foreach from=$urls.alternative_langs item=pageUrl key=code}
-            <link rel="alternate" href="{$pageUrl}" hreflang="{$code}">
-            <link rel="alternate" href="{$pageUrl}" hreflang="x-default">
+            <link rel="alternate" href="{$pageUrl}" hreflang="{$code}" />
+            <link rel="alternate" href="{$pageUrl}" hreflang="x-default" />
       {/foreach}
   {/block}
 {/block}

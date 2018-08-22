@@ -87,9 +87,10 @@
   #quantity_wanted {
     color: $gray-darker;
     background-color: white;
-    height: 2.75rem;
+    height: 60px;
     padding: 0.175rem 0.5rem;
-    width: 3rem;
+    width: 60px;
+    text-align: center;
   }
   .input-group-btn-vertical {
     width: auto;

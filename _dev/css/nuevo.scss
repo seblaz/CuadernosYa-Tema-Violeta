@@ -3145,11 +3145,11 @@ a.dropdown-menu-link{
 }
 
 .bootstrap-touchspin .input-group-btn-vertical>.btn{
-  right: initial;
+  right: -40px;
 }
 
 .product-quantity .add{
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 @include media-breakpoint-down(xs) {
@@ -3398,4 +3398,21 @@ div.product-add-to-cart > div > div.add > button > i{
 
 .account-section-title{
   color: black;
+}
+
+@include media-breakpoint-down(xs) {
+  .product-discounts>.table-product-discounts thead tr th, .product-discounts > .table-product-discounts tbody tr td{
+    padding: .625rem 5px;
+  }
+}
+
+.bootstrap-touchspin .input-group-btn-vertical{
+  >.btn{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+  }
+  .bootstrap-touchspin-down{
+    padding-bottom: 1px;
+  }
 }
