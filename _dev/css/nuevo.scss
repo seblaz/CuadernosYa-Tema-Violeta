@@ -1952,15 +1952,18 @@
   }
   
   .p1-gradient-color, .sigle-service:hover .lnr, .single-blog h4:hover {
+    background: linear-gradient(to right,#908ced 0%,#b56fe8);
     background: -moz-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
     background: -webkit-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
     background: -ms-linear-gradient(0deg, #908ced 0%, #b56fe8 100%);
-    background: linear-gradient(to right, #908ced 0%, #b56fe8 100%);
+  }
+
+  .p1-gradient-color, .sigle-service:hover .lnr, .single-blog h4:hover, .sarasa {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
   .primary-btn {
     line-height: 42px;
     padding-left: 30px;

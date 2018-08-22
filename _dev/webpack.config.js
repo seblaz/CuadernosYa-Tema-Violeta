@@ -85,33 +85,10 @@ let config = {
     jquery: 'jQuery'
   },
   plugins: [
-    new ExtractTextPlugin(path.join('..', 'css', 'theme.css'))
+    new ExtractTextPlugin(path.join('..', 'css', 'theme.css')),
+    require('autoprefixer')
   ]
 };
-
-// if(development){
-  
-//   config.devtool = 'inline-source-map';
-
-// }else{
-//   config.plugins.push(
-//     new webpack.optimize.UglifyJsPlugin({
-//       sourceMap: false,
-//       compress: {
-//         sequences: true,
-//         conditionals: true,
-//         booleans: true,
-//         if_return: true,
-//         join_vars: true,
-//         drop_console: true
-//       },
-//       output: {
-//         comments: false
-//       },
-//       minimize: true
-//     })
-//   ); 
-// }
 
 module.exports = (env, argv) => {
 
@@ -134,11 +111,21 @@ module.exports = (env, argv) => {
           parallel: true,
           sourceMap: false // set to true if you want JS source maps
         }),
-        new OptimizeCSSAssetsPlugin({})
+        new OptimizeCSSAssetsPlugin({
+          cssProcessorOptions: {
+            parser: require("postcss-safe-parser"),
+            autoprefixer: { browsers: config.browsers },
+            mergeLonghand: true,
+            discardComments: {
+              removeAll: true
+            }
+          },
+          canPrint: true
+        })
       ]
     }
   }else{
-    console.log('none = something wrong');
+    console.log('none => something wrong');
   }
 
   return config;
