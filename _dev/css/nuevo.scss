@@ -3404,6 +3404,9 @@ div.product-add-to-cart > div > div.add > button > i{
   .product-discounts>.table-product-discounts thead tr th, .product-discounts > .table-product-discounts tbody tr td{
     padding: .625rem 5px;
   }
+  .product-line-grid-right.product-line-actions.col-md-5.col-12{
+    margin-top: 10px;
+  }
 }
 
 .bootstrap-touchspin .input-group-btn-vertical{
@@ -3414,5 +3417,18 @@ div.product-add-to-cart > div > div.add > button > i{
   }
   .bootstrap-touchspin-down{
     padding-bottom: 1px;
+  }  
+}
+
+.bootstrap-touchspin input.form-control{
+  height: 60px;
+  width: 60px;
+  text-align: center;
+}
+
+@include media-breakpoint-up(md) {
+  div > .cart-line-product-actions{
+    margin-left: -10px;
   }
 }
+

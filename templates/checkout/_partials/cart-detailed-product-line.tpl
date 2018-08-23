@@ -113,10 +113,10 @@
   <!--  product left body: description -->
   <div class="product-line-grid-right product-line-actions col-md-5 col-12">
     <div class="row">
-      <div class="col-4 d-md-none"></div>
-      <div class="col-md-8 col-6">
+      <div class="col-sm-4 col-1 d-sm-block"></div>
+      <div class="col-sm-6 col-md-10 col-8">
         <div class="row">
-          <div class="col-md-6 col-6 qty">
+          <div class="col-md-6 col-sm-7 col-7 qty">
             {if isset($product.is_gift) && $product.is_gift}
               <span class="gift-quantity">{$product.quantity}</span>
             {else}
@@ -133,7 +133,7 @@
               />
             {/if}
           </div>
-          <div class="col-md-6 col-2 price">
+          <div class="col-md-6 col-sm-5 col-5 price text-sm-left text-md-center">
             <span class="product-price">
               <strong>
                 {if isset($product.is_gift) && $product.is_gift}
@@ -146,7 +146,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-2 acciones-producto">
+      <div class="col-md-2 col-2 acciones-producto">
         <div class="cart-line-product-actions">
           <a
               class                       = "remove-from-cart"
