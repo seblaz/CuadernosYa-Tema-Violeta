@@ -138,7 +138,7 @@
       <div class="col-lg-6 col-md-6 col-sm-6">
         <article id="invoice-address" class="box">
           <h4>{l s='Invoice address %alias%' d='Shop.Theme.Checkout' sprintf=['%alias%' => $order.addresses.invoice.alias]}</h4>
-          <address>{$order.addresses.invoice.formatted nofilter}</address>
+          <address>{l s='Teléfono móbil' d='Shop.Theme.Checkout'}: {$order.addresses.invoice.phone_mobile}</address>
         </article>
       </div>
       <div class="clearfix"></div>

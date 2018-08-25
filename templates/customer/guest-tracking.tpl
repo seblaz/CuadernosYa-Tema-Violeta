@@ -49,7 +49,7 @@
 
       <section class="form-fields">
 
-        <label class="mt-10 mb-10">
+        <label class="mt-10 mb-10 text-left">
           <span>{l s='Set your password:' d='Shop.Forms.Labels'}</span>
           <input type="password" data-validate="isPasswd" name="password" value="">
         </label>
