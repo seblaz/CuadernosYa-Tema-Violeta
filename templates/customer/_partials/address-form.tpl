@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name="address_form"}
-  <div class="js-address-form">
+  <div class="js-address-form" id="formulario-direccion">
     {include file='_partials/form-errors.tpl' errors=$errors['']}
 
     {block name="address_form_url"}

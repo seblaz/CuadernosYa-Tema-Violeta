@@ -37,9 +37,9 @@
       {/if}
 
       {if $use_same_address && !$cart.is_virtual}
-        <p>
+        {* <p>
           {l s='The selected address will be used both as your personal address (for invoice) and as your delivery address.' d='Shop.Theme.Checkout'}
-        </p>
+        </p> *}
       {elseif $use_same_address && $cart.is_virtual}
         <p>
           {l s='The selected address will be used as your personal address (for invoice).' d='Shop.Theme.Checkout'}
@@ -72,9 +72,9 @@
           <p class="alert alert-danger js-address-error" name="alert-delivery" style="display: none">{l s="Your address is incomplete, please update it." d="Shop.Notifications.Error"}</p>
         {/if}
 
-        <p class="add-address">
+        {* <p class="add-address">
           <a href="{$new_address_delivery_url}"><i class="material-icons">&#xE145;</i>{l s='add new address' d='Shop.Theme.Actions'}</a>
-        </p>
+        </p> *}
 
         {if $use_same_address && !$cart.is_virtual}
           {* <p>
@@ -116,9 +116,9 @@
             <p class="alert alert-danger js-address-error" name="alert-invoice" style="display: none">{l s="Your address is incomplete, please update it." d="Shop.Notifications.Error"}</p>
           {/if}
 
-          <p class="add-address">
+          {* <p class="add-address">
             <a href="{$new_address_invoice_url}"><i class="material-icons">&#xE145;</i>{l s='add new address' d='Shop.Theme.Actions'}</a>
-          </p>
+          </p> *}
         {/if}
 
       {/if}

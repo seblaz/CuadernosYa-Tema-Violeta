@@ -29,6 +29,9 @@
     <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
 
     {block name='product_quantity'}
+    {if !isset($main_load)}
+      {$main_load = false}
+    {/if}
       <div class="product-quantity clearfix">
         <div class="qty">
           <input

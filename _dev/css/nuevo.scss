@@ -3432,3 +3432,10 @@ div.product-add-to-cart > div > div.add > button > i{
   }
 }
 
+#formulario-direccion section > div.form-group.row{
+  &.address1, &.id_country, &.firstname, &.lastname, &.city, &.lastname, &.id_state, &.alias{
+    display: none;
+  }
+}
+
+// #content > div > div > form > section > div.form-group.row.alias

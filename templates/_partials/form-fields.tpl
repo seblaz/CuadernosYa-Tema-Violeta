@@ -30,10 +30,10 @@
 
 {else}
 
-  <div class="form-group row {if !empty($field.errors)}has-error{/if}">
+  <div class="form-group row {$field.name} {if !empty($field.errors)}has-error{/if}">
     {if $field.name == "phone_mobile"}
       <p class="col-12 form-control-comment{if $field.required} required{/if}">
-        Utilizaremos este número para contactarte por WhatsApp una vez que tu pedido esté listo para la entrega:
+        {l s='Utilizaremos este número para contactarte por WhatsApp una vez que tu pedido esté listo para la entrega:' d='Shop.Forms.Labels'}
       </p>
     {/if}
 
@@ -48,10 +48,14 @@
 
         {block name='form_field_item_select'}
           <select class="form-control form-control-select" name="{$field.name}" {if $field.required}required{/if}>
+            {if $field.name == id_state}
+              <option value="102" selected></option>
+            {else}
             <option value disabled selected>{l s='-- please choose --' d='Shop.Forms.Labels'}</option>
             {foreach from=$field.availableValues item="label" key="value"}
               <option value="{$value}" {if $value eq $field.value} selected {/if}>{$label}</option>
             {/foreach}
+            {/if}
           </select>
         {/block}
 
@@ -166,7 +170,7 @@
             class="form-control"
             name="{$field.name}"
             type="{$field.type}"
-            value="{$field.value}"
+            value="{if $field.name == address1} {elseif $field.name == city}Buenos Aires{else}{$field.value}{/if}"
             {if isset($field.availableValues.placeholder)}placeholder="{$field.availableValues.placeholder}"{/if}
             {if $field.maxLength}maxlength="{$field.maxLength}"{/if}
             {if $field.required}required{/if}
