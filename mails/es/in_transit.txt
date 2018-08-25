@@ -12,7 +12,7 @@ en tránsito.
 Puede realizar el seguimiento de su paquete mediante el siguiente
 enlace: {followup} [{followup}] 		 
 
-Puede revisar su pedido y descargar la factura desde "Historial de
+Puede revisar su pedido desde "Historial de
 pedidos" [{history_url}] de su cuenta de cliente,
 haciendo clic en [{my_account_url}] en nuestra
 tienda. 

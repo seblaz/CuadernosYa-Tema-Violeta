@@ -135,12 +135,12 @@
         </div>
       {/if} *}
 
-      <div class="col-lg-6 col-md-6 col-sm-6">
+      {* <div class="col-lg-6 col-md-6 col-sm-6">
         <article id="invoice-address" class="box">
           <h4>{l s='Invoice address %alias%' d='Shop.Theme.Checkout' sprintf=['%alias%' => $order.addresses.invoice.alias]}</h4>
           <address>{l s='Teléfono móbil' d='Shop.Theme.Checkout'}: {$order.addresses.invoice.phone_mobile}</address>
         </article>
-      </div>
+      </div> *}
       <div class="clearfix"></div>
     </div>
   {/block}

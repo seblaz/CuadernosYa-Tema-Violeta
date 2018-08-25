@@ -5,7 +5,7 @@ Hola {firstname} {lastname},
 Estamos procesando su pedido en {shop_name} con la referencia
 {order_name}. 
 
-Puede revisar su pedido y descargar la factura desde "Historial de
+Puede revisar su pedido desde "Historial de
 pedidos" [{history_url}] de su cuenta de cliente,
 haciendo clic en [{my_account_url}] en nuestra
 tienda. 

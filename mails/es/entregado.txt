@@ -8,7 +8,7 @@ Su pedido con la referencia {order_name} ha sido entregado.
 
 ¡Gracias por comprar en {shop_name}! 		 
 
-Puede revisar su pedido y descargar la factura desde "Historial de
+Puede revisar su pedido desde "Historial de
 pedidos" [{history_url}] de su cuenta de cliente,
 haciendo clic en [{my_account_url}] en nuestra
 tienda. 

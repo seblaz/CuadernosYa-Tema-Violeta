@@ -8,7 +8,7 @@ nosotros lo antes posible.
 
 NO PODEMOS ENVIAR SU PEDIDO HASTA QUE RECIBAMOS SU PAGO. 		 
 
-Puede revisar su pedido y descargar la factura desde "Historial de
+Puede revisar su pedido desde "Historial de
 pedidos" [{history_url}] de su cuenta de cliente,
 haciendo clic en [{my_account_url}] en nuestra
 tienda. 

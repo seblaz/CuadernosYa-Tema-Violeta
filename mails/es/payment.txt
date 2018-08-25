@@ -7,7 +7,7 @@ Hola {firstname} {lastname},
 El pago para el pedido con refencia {order_name} ha sido procesado
 correctamente. 
 
-Puede revisar su pedido y descargar la factura desde "Historial de
+Puede revisar su pedido desde "Historial de
 pedidos" [{history_url}] de su cuenta de cliente,
 haciendo clic en [{my_account_url}] en nuestra
 tienda. 

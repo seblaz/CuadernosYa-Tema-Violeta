@@ -22,9 +22,9 @@ Dirección de entrega
 
 {delivery_block_html} 		 
 
-Dirección de facturación
+Contacto
 
-{invoice_block_html} 
+Teléfono: {invoice_phone} 
 
 Mensaje del cliente: 
 
