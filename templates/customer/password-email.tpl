@@ -49,15 +49,15 @@
     </header>
 
     <section class="form-fields">
-      <div class="form-group center-email-fields">
-        <label class="col-md-3 form-control-label required">{l s='Email address' d='Shop.Forms.Labels'}</label>
-        <div class="col-md-5 email">
+      <div class="form-group center-email-fields row">
+        <label class="col-lg-4 col-md-5 col-12 form-control-label required">{l s='Email address' d='Shop.Forms.Labels'}</label>
+        <div class="col-md-6 email">
           <input type="email" name="email" id="email" value="{if isset($smarty.post.email)}{$smarty.post.email|stripslashes}{/if}" class="form-control" required>
         </div>
-        <button class="form-control-submit btn btn-primary hidden-xs-down" name="submit" type="submit">
+        <button class="form-control-submit btn btn-primary md-12 d-none d-md-block" name="submit" type="submit">
           {l s='Send reset link' d='Shop.Theme.Actions'}
         </button>
-        <button class="form-control-submit btn btn-primary hidden-sm-up" name="submit" type="submit">
+        <button class="form-control-submit btn btn-primary d-md-none" name="submit" type="submit">
           {l s='Send' d='Shop.Theme.Actions'}
         </button>
       </div>
