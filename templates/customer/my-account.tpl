@@ -42,14 +42,14 @@
       {if $customer.addresses|count}
         <a class="col-lg-4 col-md-6 col-sm-6 col-12" id="addresses-link" href="{$urls.pages.addresses}">
           <span class="link-item">
-            <i class="material-icons">&#xE56A;</i>
+            <i class="material-icons">phone</i>
             {l s='Addresses' d='Shop.Theme.Customeraccount'}
           </span>
         </a>
       {else}
         <a class="col-lg-4 col-md-6 col-sm-6 col-12" id="address-link" href="{$urls.pages.address}">
           <span class="link-item">
-            <i class="material-icons">&#xE567;</i>
+            <i class="material-icons">phone</i>
             {l s='Add first address' d='Shop.Theme.Customeraccount'}
           </span>
         </a>
