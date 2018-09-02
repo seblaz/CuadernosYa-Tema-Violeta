@@ -71,11 +71,9 @@
           <input type="hidden" name="reset_token" id="reset_token" value="{$reset_token}">
 
           <div class="row form-group">
-            <div class="offset-md-5">
-              <button class="btn btn-primary" type="submit" name="submit">
-                {l s='Change Password' d='Shop.Theme.Actions'}
-              </button>
-            </div>
+            <button class="btn btn-primary" type="submit" name="submit">
+              {l s='Change Password' d='Shop.Theme.Actions'}
+            </button>
           </div>
         </div>
 
