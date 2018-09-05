@@ -221,5 +221,12 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.btn.btn-primary.add-to-cart').prop('disabled', false);
+  $('.btn.btn-primary.add-to-cart').prop('disabled', false);  
+});
+
+$(document).ready(function(){
+    $('#confirmar-pedido').click(function(e){
+      $('#confirmar-pedido').hide();
+      $('#mensaje-espere').show();
+    })
 });

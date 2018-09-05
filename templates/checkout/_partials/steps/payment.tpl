@@ -118,7 +118,12 @@
 
   <div id="payment-confirmation">
     <div class="ps-shown-by-js">
-      <button type="submit" {if !$selected_payment_option} disabled {/if} class="btn btn-primary center-block">
+      <div id="mensaje-espere" style="display:none;">
+        <div class="alert alert-info" role="alert" data-alert="info">
+          Su pedido está siendo confirmado, espere unos segundos por favor...
+        </div>
+      </div>
+      <button type="submit" {if !$selected_payment_option} disabled {/if} class="btn btn-primary center-block" id="confirmar-pedido">
         {l s='Order with an obligation to pay' d='Shop.Theme.Checkout'}
       </button>
       {if $show_final_summary}
