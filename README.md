@@ -1,12 +1,30 @@
-# PrestaShop Tema Violeta
+# CuadernosYa Tema Violeta
 
-Tema violeta para prestashop.
+Nuevo tema con violeta como el color principal para el sitio [cuadernosya.yk](https://cuadernosya.tk) construido con PrestaShop.
 
-Para compilar:
+## Requisitos
+ - [npm](https://www.npmjs.com/)
+ - [Prestashop](https://www.prestashop.com/)
 
-cd _dev
-npm install
-npm run-script build
+## Instalación
 
-Para compilar a cada cambio:
-npm run watch
+Ejecutar:
+
+    $ cd _dev
+    $ npm install
+
+Luego para compilar en **desarrollo**:
+
+    $ npm run build
+
+Si se desea que se recompile en cada cambio:
+
+    $ npm run watch
+
+Para compilar en **producción**:
+
+    $ npm run buildev
+
+## Demo
+
+Se puede ver el sitio funcionando en [cuadernosya.yk](https://cuadernosya.tk).
