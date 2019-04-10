@@ -28,3 +28,7 @@ Para compilar en **producción**:
 ## Demo
 
 Se puede ver el sitio funcionando en [cuadernosya.yk](https://cuadernosya.tk).
+
+## Licencia
+
+Este sitio se encuentra disponible como código abierto bajo los términos de la [Licencia MIT](https://opensource.org/licenses/MIT)
