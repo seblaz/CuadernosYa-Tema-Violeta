@@ -1,4 +1,5 @@
 .search-widget {
+  max-width: 300px;
   display: inline-block;
   @include search-box;
 }

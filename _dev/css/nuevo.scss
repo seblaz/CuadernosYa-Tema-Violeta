@@ -1866,6 +1866,10 @@
     right: 20px;
   }
   
+  .navbar-nav{
+    margin-right: 40px;
+  }
+  
   @media (max-width: 992px) {
     .navbar-nav {
       height: auto;
@@ -3444,4 +3448,8 @@ div.product-add-to-cart > div > div.add > button > i{
 
 #footer_account_list > li:nth-child(3){
   display: none;
+}
+
+* {
+  outline: none;
 }

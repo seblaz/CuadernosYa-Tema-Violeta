@@ -24,7 +24,7 @@
  *}
 
 {if $homeslider.slides}
-  <div id="carousel" data-ride="carousel" class="carousel slide" data-interval="{$homeslider.speed}" data-wrap="{(string)$homeslider.wrap}" data-pause="{$homeslider.pause}">
+  {* <div id="carousel" data-ride="carousel" class="carousel slide" data-interval="{$homeslider.speed}" data-wrap="{(string)$homeslider.wrap}" data-pause="{$homeslider.pause}">
     <ul class="carousel-inner" role="listbox">
       {foreach from=$homeslider.slides item=slide name='homeslider'}
         <li class="carousel-item {if $smarty.foreach.homeslider.first}active{/if}" role="option" aria-hidden="{if $smarty.foreach.homeslider.first}false{else}true{/if}">
@@ -56,5 +56,5 @@
         <span class="sr-only">{l s='Next' d='Shop.Theme.Global'}</span>
       </a>
     </div>
-  </div>
+  </div> *}
 {/if}

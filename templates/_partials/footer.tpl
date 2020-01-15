@@ -24,12 +24,12 @@
  *}
 <div class="container">
   <div class="row">
-    <div class="col-lg-3  col-md-3">
+    {* <div class="col-lg-3  col-md-3">
       {block name='hook_footer'}
         {hook h='displayFooterBefore'}
       {/block}
-    </div>
-    <div class="col-lg-6  col-md-9">
+    </div> *}
+    <div class="col-lg-6 col-md-9 offset-lg-3">
       <div class="single-footer-widget newsletter">
         <h6>Novedades</h6>
         <p>Podés confiar en nosotros. Solo enviamos ofertas, ni un solo spam.</p>
@@ -67,9 +67,9 @@
     {block name='hook_footer'}
       {hook h='displayFooter'}
     {/block}
-    {block name='hook_footer_after'}
+    {* {block name='hook_footer_after'}
       {hook h='displayFooterAfter'}
-    {/block}
+    {/block} *}
   </div>
   <div class="row footer-bottom d-flex justify-content-between">
           <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>

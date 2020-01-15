@@ -4,16 +4,19 @@ Nuevo tema con violeta como el color principal para el sitio [cuadernosya.yk](ht
 
 ## Requisitos
  - [npm](https://www.npmjs.com/)
- - [Prestashop](https://www.prestashop.com/)
+ - [php](https://www.php.net/)
+ - [Apache2](https://httpd.apache.org/)
+ - [MySQL](https://www.mysql.com/)
 
 ## Instalación
 
-Ejecutar:
+Ejecutar el script:
 
-    $ cd _dev
-    $ npm install
+    $ ./temavioleta.sh
 
-Luego para compilar en **desarrollo**:
+Esto instalará Prestashop con el tema.
+
+Luego para compilar en **desarrollo** desde `_dev`:
 
     $ npm run build
 

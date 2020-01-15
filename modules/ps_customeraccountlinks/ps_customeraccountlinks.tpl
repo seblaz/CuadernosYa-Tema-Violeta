@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
-<div id="block_myaccount_infos" class="single-footer-widget">
+<div id="block_myaccount_infos" class="single-footer-widget col-lg-3 col-md-3 wrapper footer-links">
   <h6><a href="{$urls.pages.my_account}" rel="nofollow">{l s='Your account' d='Shop.Theme.Customeraccount'}</a></h6>
   <ul class="footer-nav" id="footer_account_list">
     {foreach from=$my_account_urls item=my_account_url}

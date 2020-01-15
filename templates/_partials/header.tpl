@@ -34,7 +34,6 @@
       <a class="navbar-brand logo-link" href="{$urls.base_url}">
         <img class="logo" src="{$shop.logo}" alt="{$shop.name}">
       </a>
-
       <div class="navbar-brand mobile">
         {hook h='displayNav2'}
       </div>

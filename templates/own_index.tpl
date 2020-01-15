@@ -68,54 +68,7 @@
 </section>
 <!-- end como-funciona-->
 
-<!-- Start entrega -->
-<section class="generic-banner relative entrega" id="entrega">
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-6 about-left">
-                <h1>{l s='Vamos al lugar donde estás' d='Shop.Theme.Index'}</h1>
-                <p>
-                    {l s='Una vez que realices el pedido online nos contactaremos con vos para coordinar la entrega en la fiuba (por el momento solo relizamos entregas en la sede Paseo Colón). Además garantizamos que tu pedido estará disponible para la entrega en un máximo de tres días hábiles.' d='Shop.Theme.Index'}
-                </p>
-            </div>
-            <div class="col-lg-6 producto-home">
-                {hook h='displayHomeProducts' time=0}
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End entrega -->
-
-<!-- Start pago-devoluciones -->
-<section>
-    <div class="container">
-        <div class="section-top-border">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-5 anuncio producto-home">
-                    {hook h='displayHomeProducts' time=1}
-                </div>
-                <div class="col-lg-8 col-md-7 mt-sm-20" id="pago">
-                    <div class="pago">
-                        <h3 class="mb-30">{l s='Pagá solo por lo que recibís' d='Shop.Theme.Index'}</h3>
-                        <p>
-                            {l s='No es necesario que adelantes dinero, pagá una vez que tengas tus productos en tus manos.' d='Shop.Theme.Index'}
-                        </p>
-                    </div>
-                    <div class="devoluciones" id="devolucion" >
-                        <h3 class="mb-30">{l s='Devoluciones sin condiciones' d='Shop.Theme.Index'}</h3>
-                        <p>
-                            {l s='Si querés devolver de manera total o parcial un pedido podés hacerlo sin cargo hasta 15 días luego de recibido el producto.
-                            Al igual que la entrega, las devoluciones se coordinan para realizarlas en la fiuba.
-                            Si querés devolver algún producto contactanos ' d='Shop.Theme.Index'}
-                            <a href="#contacto">{l s='acá' d='Shop.Theme.Index'}</a>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End pago-devoluciones -->
+{hook h='displayHome'}
 
 <!-- Start boton ir a la tienda -->
 <section class="skill-area section-gap ir-tienda">
@@ -137,7 +90,7 @@
                 <h3 class="mb-30">Contactanos</h3>
                 <p>
                     Envianos un mensaje a través de nuestro <button id="boton-chat" class="genric-btn info-border circle small boton-contacto">chat en linea</button>
-                    , o vía <a target="_blank" href="{l s='https://wa.me/5491155798100' d='Shop.Theme.Index'}" class="genric-btn info-border circle small boton-whatsapp boton-contacto">WhatsApp</a>.
+                    , o vía <a target="_blank" href="{l s='https://wa.me/5491112345678' d='Shop.Theme.Index'}" class="genric-btn info-border circle small boton-whatsapp boton-contacto">WhatsApp</a>.
                     También podés enviarnos un correo electrónico a <a href="mailto:{l s='hola@cuadernosya.tk' d='Shop.Theme.Index'}">{l s='hola@cuadernosya.tk' d='Shop.Theme.Index'}</a>.
                 </p>
             </div>
