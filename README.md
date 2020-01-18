@@ -1,6 +1,6 @@
 # CuadernosYa Tema Violeta
 
-Nuevo tema con violeta como el color principal para el sitio [cuadernosya.yk](https://cuadernosya.tk) construido con PrestaShop.
+Nuevo tema (responsive) con violeta como el color principal para el sitio [cuadernos-ya.herokuapp.com](http://cuadernos-ya.herokuapp.com) construido con PrestaShop.
 
 ## Requisitos
  - [npm](https://www.npmjs.com/)
@@ -30,8 +30,12 @@ Para compilar en **producción**:
 
 ## Demo
 
-Se puede ver el sitio funcionando en [cuadernosya.yk](https://cuadernosya.tk).
+Se puede ver el sitio funcionando en [cuadernos-ya.herokuapp.com](http://cuadernos-ya.herokuapp.com/).
+
+<p align="center">
+    <img alt="preview" src="preview.png"/>
+</p>
 
 ## Licencia
 
-Este sitio se encuentra disponible como código abierto bajo los términos de la [Licencia MIT](https://opensource.org/licenses/MIT)
+Este sitio se encuentra disponible como código abierto bajo los términos de la [Licencia MIT](https://opensource.org/licenses/MIT).
