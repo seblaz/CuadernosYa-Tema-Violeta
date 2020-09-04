@@ -29,7 +29,7 @@
         "jquery-sticky": "^1.0.4",
         "linearicons": "^1.0.2",
         "material-design-icons": "^3.0.1",
-        "node-sass": "^4.9.3",
+        "node-sass": "^4.13.1",
         "optimize-css-assets-webpack-plugin": "^5.0.3",
         "popper.js": "^1.14.4",
         "postcss-flexibility": "^2.0.0",
